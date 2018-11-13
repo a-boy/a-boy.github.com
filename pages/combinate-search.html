@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>组合搜</title>
+<style type="text/css">
+.wordslist {
+	float:left;
+}
+</style>
+</head>
+
+<body contenteditable="true">
+<div>
+<form action="https://www.google.com/search" target="_blank" method="get">
+<input id="q" name="q" type="text" size="30"><input type="submit" value="搜">
+</form>
+</div>
+<p>Tip: click a item to climb... press Enter begin to add a item at below! </p>
+<div class="wordslist"><ul>
+<li>Java</li>
+<li>HTML</li><li>javascript</li>
+<li>css</li>
+<li>json</li>
+<li>webgl</li>
+<li>Mathematica</li>
+</ul></div>
+<div class="wordslist"><ul>
+<li>web</li>
+<li>online</li>
+<li>mini</li>
+</ul></div>
+
+<div class="wordslist"><ul>
+<li>editor</li>
+<li>playground</li>
+<li>cheat sheet</li>
+<li>ide</li>
+<li>sample</li>
+<li>plugin</li>
+</ul></div>
+<script>
+var a=document.getElementsByTagName("li");
+for (var i = 0; i < a.length; i++)
+{
+    a[i].addEventListener("click",
+		function(e){ document.getElementById("q").value+=this.innerText+' ';},
+		false);
+}
+</script>
+</body>
+</html>
