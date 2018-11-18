@@ -107,7 +107,7 @@ border:1px solid orange;
 	preview('posts/2017-02-07-四年前三月的湘江岸边.md');
 	
 	function readPostList(){
-	var url='https://api.github.com/repos/'+'a-boy.github.com'+'/contents/posts?ref=master'; 
+	var url='https://api.github.com/repos/'+'a-boy/a-boy.github.com'+'/contents/posts?ref=master'; 
 	var req = new XMLHttpRequest();
 		req.open("GET", url, true);
 		req.onload = function(){
@@ -124,7 +124,7 @@ border:1px solid orange;
 	readPostList();
 
 	function readPageList(){
-	var url='https://api.github.com/repos/'+'a-boy.github.com'+'/contents/playground?ref=master'; 
+	var url='https://api.github.com/repos/'+'a-boy/a-boy.github.com'+'/contents/playground?ref=master'; 
 	var req = new XMLHttpRequest();
 		req.open("GET", url, true);
 		req.onload = function(){
