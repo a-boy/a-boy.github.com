@@ -1,7 +1,7 @@
-<% if (names.length) { %>
+<% if (genre.length) { %>
   <ul>
-    <% names.forEach(function(name){ %>
-      <li foo='<%= name + "'" %>'><%= name %></li>
+    <% genre.forEach(function(s){ %>
+      <li foo='<%= s + "'" %>'><%= s %></li>
     <% }) %>
   </ul>
 <% } %>
