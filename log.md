@@ -21,11 +21,9 @@ phonegap
 播放歌曲   http://play.baidu.com/?__m=mboxCtrl.playSong&__a=31080329
 歌曲信息  http://music.baidu.com/song/314011  <div id="lyricCont" class="lyric-content" style="" data-lrclink="/data2/lrc/314012/You+And+Me.lrc"
 
-### 2014-09-18
+
+### var log2
 百度联想词库调用	http://suggestion.baidu.com/su?json=1&cb=queryList&wd=美女
 
-### idea in 2016-01-31
-- webos: nodejs webdav term.js ...
-- factor rsa semi-prime, 分布式多种算法并行计算
-- write book for oreilly 《webminer》《play mathematica》《play c programming in a student's perspective》《UTF-8 sailing》
-- 代理服务 5元/月 出售
+### 2018-11-18
+RapidSVN, VNC Viewer, VisualSVN Server, winamp27_full.exe
