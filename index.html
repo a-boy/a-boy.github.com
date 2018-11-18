@@ -23,7 +23,7 @@ border:1px solid orange;
 	float:left;
 }
 </style>
-
+<script src="lib/marked.js"></script>
 </head>
 
 <body>
@@ -100,7 +100,7 @@ border:1px solid orange;
 		req.open("GET", url, true);
 		//req.responseType="json";
 		req.onload = function(){
-			 document.getElementById('preview').innerHTML = /*marked*/(req.response)
+			 document.getElementById('preview').innerHTML = marked(req.response)
 		}
 		req.send(null);
 	}
