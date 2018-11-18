@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<a href="javascript:(function(){   var links=document.links;   var i=0;   var play = function(){     i++;     if(i>=links.length){       clearInterval(iv);   return;     };     var w=window.open(links[i].href,'Pagecast');   };    var iv=setInterval(play,2000);})()">web幻灯片</a>
+<br/>
+
+<a href="javascript: var q;      if (window.getSelection) q = window.getSelection().toString();      else if (document.selection) q = document.selection.createRange().text;      void window.open('http://en.wikipedia.org/wiki/' + q);">
+    Look Up Selected Text In Wikipedia </a> <br/>
+
+<a href="javascript:(function(){
+    var text = document.getSelection().toString() || document.title;
+    speechSynthesis.speak( new SpeechSynthesisUtterance(text));
+}())">speak selected text</a>
+</body>
+</html>

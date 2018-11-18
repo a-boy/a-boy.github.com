@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>changing background-color</title>
+
+</head>
+
+<body>
+
+  <script>
+(function(){  
+    var c=0x500;
+    function change(){                
+      c=(c+13)%0xfff;
+      var color=("000"+c.toString(16)).substr(-3,3);
+      console.log(color);
+     document.body.style.backgroundColor="#"+color;
+      
+    };
+    setInterval(change,1000);
+})();                  
+  </script>
+
+</body>
+
+</html>

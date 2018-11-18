@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>rush website</title>
+    <link rel="stylesheet" type="text/css" href="jsoneditor.css">
+    <script type="text/javascript" src="jsoneditor.js"></script>
+    <script>function _(id){return document.getElementById(id);};</script>
+    <style>
+        body {
+            color: #ff9900
+        }
+        div.content
+        {
+            border:1px solid orange;
+        }
+        #jsoneditor {
+            width: 320px;
+            height: 600px;
+        }
+        #searchcontrol .gsc-control {
+            width: 600px;
+        }
+        #searchcontrol{
+            width:600px;
+            float:left;
+        }
+    </style>
+    <script src="http://www.google.com/jsapi"  type="text/javascript"></script>
+    <script  type="text/javascript">
+        //<![CDATA[
+        google.load('search', '1');
+
+        var gs;
+        function OnLoad() {
+            // Create a search control
+            var searchControl = new google.search.SearchControl();
+            gs=searchControl;
+            searchControl.addSearcher(new google.search.ImageSearch());
+            searchControl.addSearcher(new google.search.WebSearch());
+            searchControl.addSearcher(new google.search.VideoSearch());
+            searchControl.addSearcher(new google.search.BlogSearch());
+            searchControl.addSearcher(new google.search.NewsSearch());
+            searchControl.addSearcher(new google.search.BookSearch());
+
+            searchControl.setResultSetSize(8);
+            // Set the Local Search center point
+            //localSearch.setCenterPoint("Mars, Mars");
+            // draw in tabbed layout mode
+            var drawOptions = new google.search.DrawOptions();
+            drawOptions.setDrawMode(google.search.SearchControl.DRAW_MODE_TABBED);
+
+            // tell the searcher to draw itself and tell it where to attach
+            searchControl.draw(_("searchcontrol"), drawOptions);
+
+            // execute an inital search
+            searchControl.execute("rush~");
+        }
+        google.setOnLoadCallback(OnLoad);
+
+        //]]>
+    </script>
+</head>
+
+<body>
+<header>
+    <nav> <a href="http://a-boy.tk"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div id="bigtree" style="float:left;width:320px">
+        JSON Rush! <a href="http://collabedit.com/gh4gd">collabedit.com/gh4gd</a>
+        <a href="https://github.com/a-boy/opendb/tree/master/json" target="_blank">opendb/json</a>
+
+        <br/>
+        <textarea id="software" name="software" rows="2" cols="8"  ondblclick="rush(JSON.parse(this.value))">
+            {
+            "Audio & Video":{"Cakewalk":"","Overture":"","CoolEdit":"","FL Studio":"","MuseScore":"","Media Player Classic - Home Cinema":"","HandBrake":"","CamStudio - Desktop Screen Recorder":"","VirtualDub":"","SMPlayer":"","ffdshow":"","OpenCV":"","VLC media player":"","OpenLP - Free Church Worship Software":"","InfraRecorder":"","LAME (Lame Aint an MP3 Encoder)":"","LMMS (Linux MultiMedia Studio)":"","avidemux-mswin":"","DVDStyler":"","Avisynth rev. 2":"","MediaPortal":"","Album Art Downloader":"","MediaInfo":"","Subsonic":"","MeGUI":"","Audacity":"","Hydrogen":"","MediathekView":"","x264vfw":""},
+            "Development": {"Eclipse":"","NetBeans":"","WebStorm":"","Apache OpenOffice":"","TortoiseSVN":"","Eclipse Checkstyle Plug-in":"","Hibernate":"","MinGW - Minimalist GNU for Windows":"","MySQL for Python":"","XAMPP":"","KeePass Password Safe":"","Notepad++ Plugins":"","ophcrack":"","SQuirreL SQL Client":"","Programming Without Coding Technology":"","libsdl-android":"","Boost C++ Libraries":"","WinMerge":"","Code::Blocks":"","SourceForge.net":"","Code::Blocks IDE":"","Firebird":"","Dev-C++":"","FreeFileSync":"","MinGW-builds":"","Orwell Dev-C++":"","Scribus":"","Sakura Editor":"","SharpDevelop":"","Lightweight Java Game Library":"","matplotlib":"","Cool Reader":"","Process Hacker":"","Jaspersoft Studio":"","wxPython":"","Lazarus":"","iReport-Designer for JasperReports":"","JBoss Community":"","PMD":"","devkitPro":"","TeXnicCenter":"","Nullsoft Scriptable Install System":"","wxWidgets":"","Saros - Distributed Party Programming":"","pseint":"","Poedit":"","jEdit":"","Free Pascal Compiler":"","wxWidgets Dialog Designer":"","jVi - vi editor clone":"","Haskell support for Eclipse":"","Tcl":"","MinGW-w64 - for 32 and 64 bit Windows":""},
+            "Database Tools":{"simple swing database":"","Hibernate":"","HyperSQL Database Engine (HSQLDB)":"","Orbada - Database manager":"","SQLite Database Browser New":"","Druid, The Database Manager":"","Database Independent Abstraction Layer":"","Generic Model Organism Database Project":"","refbase - Web Reference Database":"","SOCI - The C++ Database Access Library":"","DBMonster - feed your database!":"","JGen Joomla Genealogy Database":"","varDB: an antigenic variation database":"","Black Box Database":"","DBPlot (Database and CSV Plot)":"","MDO - Mercury Database Objects":"","SmallSQL Database - Java DBMS":"","German Trinity DataBase":"","Java API for Ensembl Database (ensj)":"","Database Template Library":"","ODBTP - Open Database Transport Protocol":"","DroST database":"","Database Web Admin":"","Sedna Native XML Database":"","database modeling excel":"","Natural Resources Database - GIS":"","Cross Database Engine for PHP":"","Database Deployment Manager":"","Bilt - Build a Database Applications":"","Firebird":"","SQuirreL SQL Client":"","FaceBreak v2.7":"","MySQL for Python":"","Mondrian":"","Adminer":"","MySQL":"","Databaser":"","Anti-Plagiarism (Check on plagiarism)":"","SQLObject":"","ERMaster":"","XAMPP":"","PyTables - Hierarchical datasets":"","ZeosLib":"","eXist-db":"","daloRADIUS":"","Android SQLite Manager":"","phpPgAdmin":"","FlameRobin":"","Z-WAMP Server Pack":"","dbWarden for SQL Server":"","OpenLink Virtuoso (Open-Source Edition)":""},
+            "Music":{"Canorus - music score editor":"","MuseScore":"","LenMus":"","Jalmus":"","Carnatic Music Typesetting":"","ScoreDate":"","jMusic - Composition in Java":"","Structio.  Constructing Knowledge in Col":"","Variations":"","NAT Braille":"","Guitar Note Practice":"","MEISE":"","KLAVAR !":"","Modulations":"","SpeedSightRead":"","MusicNotation TextGrid":"","Rubato":"","Qupil":""}
+            }
+        </textarea>
+        <textarea id="games_zh" name="games_zh" rows="2" cols="8" ondblclick="new jsoneditor.JSONEditor(container, options, JSON.parse(this.value))">
+            {"Birds":["halcyon", "popinjay", "aquiline", "raven", "stint", "quail", "loom", "albatross", "peregrine", "bird", "haggard", "chicken", "penguin", "lore", "pie", "lark", "magpie", "crow", "cock", "shag", "starling", "turkey", "goose", "rook", "barnacle", "thrush", "pigeon", "kiwi", "turtle", "cormorant", "swan", "kite", "teal", "hawk", "sparrow", "mew", "crane", "jackass", "eagle", "peacock", "wren", "macaroni", "owl", "kestrel", "squab", "chickadee", "tang", "nightingale", "whippoorwill", "knot", "archangel", "aigrette", "dodo", "robin", "cuckoo", "flamingo", "nun", "falcon", "egret", "coot", "juvenile", "monarch", "bantam", "tit", "jay", "ptarmigan", "kookaburra", "chanticleer", "thunderbird", "murmuration", "vulture", "booby", "hen", "bobolink", "cassowary", "guinea", "hummingbird", "blackbird", "emu", "oi", "ruff", "auk", "pullet", "shrike", "snipe", "mossy", "skylark", "drake", "tassel", "jackdaw", "tumbler", "ibis", "eyas", "chat", "heron", "ostrich", "bulbul", "grebe", "partridge", "finch", "reeve", "pelican", "capercaillie", "curlew", "dabchick", "raptor", "grackle", "linnet", "parrot", "pheasant", "weep", "nightjar", "meadowlark", "musket", "capon", "merganser", "ortolan", "redhead", "titmouse", "songbird", "bunting", "anatine", "gallinaceous", "petrel", "oriole", "loggerhead", "rooster", "phoebe", "bustard", "galah", "parakeet", "mockingbird", "bluebird", "duckling", "kingfisher", "nuthatch", "chough", "buzzard", "stork", "quetzal", "plover", "aasvogel", "waxwing", "lovebird", "tern", "accipiter", "hoopoe", "budgerigar", "toucan", "jacobin", "mallard", "cocky", "timberdoodle", "smew", "bittern", "argus", "goatsucker", "kea", "woodcock", "nighthawk", "whistler", "cockatoo", "limpkin", "avocet", "roller", "puffin", "noddy", "nestling", "lammergeier", "merle", "manikin", "junco", "chaffinch", "yaffle", "poult", "thresher", "eider", "mickey", "guillemot", "wavy", "merlin", "hammerhead", "spoonbill", "aberdevine", "lapwing", "rhea", "pochard", "sapsucker", "scaup", "hobby", "kakapo", "poll", "tercel", "warbler", "wagtail", "cockatiel", "brant", "killdeer", "throstle", "titi", "butterball", "martlet", "ani", "roadrunner", "kinglet", "kaka", "mudlark", "volucrine", "moa", "jaeger", "glede", "sandpiper", "yellowhammer", "gannet", "ossifrage", "macaw", "beefeater", "kelly", "anhinga", "frigatebird", "woodpecker", "prion", "seagull", "dotterel", "birdie", "dipper", "whimbrel", "dickcissel", "laverock", "wedgie", "cockerel", "corncrake", "phalarope", "skimmer", "tui", "corbie", "fantail", "caracara", "goosander", "budgie", "trumpeter", "catbird", "carrier", "thrasher", "hoodie", "wheatear", "vireo", "rocker", "manakin", "smee", "turdine", "chook", "morepork", "jacamar", "osprey", "kittiwake", "shearwater", "motmot", "widgeon", "fulmar", "ouzel", "blackhead", "tiercel", "waterfowl", "bonxie", "peewee", "tanager", "fringilline", "peahen", "palmiped", "jabiru", "turtledove", "mollymawk", "boobook", "bushtit", "bellbird", "gyrfalcon", "redshank", "urubu", "brahma", "gobbler", "redpoll", "philomel", "skua", "wryneck", "stinker", "courser", "scoter", "brent", "larine", "songster", "brolga", "redbird", "nene", "pipit", "cowbird", "siskin", "sugarbird", "hoatzin", "saddleback", "smeeth", "dunnock", "trogon", "thickhead", "honker", "peewit", "greenie", "snowcap", "weaver", "cushat", "broiler", "chiffchaff", "windhover", "fieldfare", "firebird", "frogmouth", "garganey", "sora", "demoiselle", "nutcracker", "sanderling", "poussin", "martin", "zoozoo", "quarrion", "nestor", "greenshank", "blackcap", "redwing", "hardhead", "wavey", "whiteface", "guitguit", "ringdove", "baldyhead", "merl", "moorcock", "bluejay", "rosella", "greenlet", "snowbird", "murre", "buteonine", "goshawk", "honeycreeper", "quelea", "honeyeater", "goldeneye", "cropper", "jacana", "maggie", "lyrebird", "oilbird", "sord", "aigret", "gamecock", "titlark", "puttock", "yaffingale", "canvasback", "tinamou", "spink", "apteryx", "whaup", "pratincole", "erne", "stilt", "dunlin", "manucode", "accentor", "jager", "didapper", "stonechat", "whitewing", "corella", "currawong", "crossbill", "makomako", "lanner", "bobwhite", "poulard", "honeyguide", "lorikeet", "kae", "weero", "seriema", "godwit", "towhee", "kingbird", "leghorn", "limicoline", "tomtit", "jaybird", "gentoo", "bateleur", "veery", "ringneck", "madge", "juvenal", "lammergeyer", "auklet", "guan", "bullfinch", "buteo", "ovenbird", "riflebird", "oxpecker", "oystercatcher", "wishtonwish", "keelie", "bluebill", "ruddock", "whitehead", "razorbill", "pouter", "turbit", "snakebird", "thornbird", "squacco", "marabou", "weka", "boomer", "babbler", "greenfinch", "squeaker", "hoopoo", "tarsal", "rifleman", "piculet", "murrelet", "corby", "troupial", "myna", "pewee", "mynah", "pettichaps", "crake", "tailorbird", "kagu", "sylvia", "moosebird", "petchary", "penduline", "culver", "pewit", "takahe", "coachman", "conure", "swiftlet", "colin", "needletail", "surfbird", "peafowl", "cushie", "sunbird", "chukar", "passager", "pintail", "piopio", "chickenhawk", "whitethroat", "parrakeet", "chewink", "dowitcher", "emeu", "polly", "saker", "cedarbird", "firecrest", "flinthead", "flycatcher", "francolin", "gadwall", "oldwife", "gnatcatcher", "broadbill", "pyrrhuloxia", "brambling", "goldspink", "tragopan", "trembler", "nelly", "tropicbird", "mudhen", "bluewing", "mopoke", "bluethroat", "courlan", "moorhen", "redbreast", "bluebreast", "greenwing", "grosbeak", "redstart", "turnstone", "reedbird", "reedling", "gerygone", "miner", "guacharo", "twite", "guineafowl", "moonbird", "beccafico", "beccaccia", "diver", "rockhopper", "bluecap", "banty", "smeath", "hernshaw", "mavis", "ynambu", "waterhen", "huia", "ruru", "avadavat", "waterthrush", "stitchbird", "jacksnipe", "jynx", "sicklebill", "ornithoid", "willet", "alcidine", "shoebill", "screamer", "sheldrake", "aepyornis", "wildfowl", "whinchat", "serin", "whitewall", "shama", "taha", "scrubfowl", "kakariki", "gallinule", "wrybill", "umbrette", "lanneret", "junglefowl", "coucal", "treepie", "cicadabird", "woodchat", "dovekie", "moorfowl", "dovelet", "scrubtit", "piet", "firetail", "crombec", "suboscine", "alcid", "turacou", "pintado", "boatbill", "turaco", "mousebird", "stinkbird", "cargoose", "cobb", "stannel", "hammerkop", "hangbird", "spuggy", "poorwill", "spug", "potoo", "muscovy", "sprigtail", "cochin", "hareld", "kokako", "hawfinch", "whydah", "sparrowhawk", "curassow", "pukeko", "waybung", "chatterer", "bushlark", "bronzewing", "bristlebird", "blightbird", "goldcrest", "weebill", "hern", "queest", "goldfinch", "lavrock", "amadavat", "whalebird", "leipoa", "heronshaw", "rainbird", "oldsquaw", "hickwall", "redback", "rockjumper", "lintie", "zopilote", "bokmakierie", "figbird", "cocklerina", "redtail", "darter", "weaverbird", "lory", "wallcreeper", "gorcock", "ricebird", "lowan", "waxbill", "butcherbird", "ringtail", "riroriro", "redbill", "wattlebird", "pajock", "apostlebird", "fernbird", "zenaida", "blackcock", "yellowlegs", "dikkop", "teuchat", "rotche", "blackgame", "tercelet", "sittine", "rubythroat", "blackpoll", "grassbird", "yellowbird", "sabrewing", "silvereye", "silverbill", "Welsummer", "grassquit", "silktail", "agami", "redthroat", "swamphen", "sawbill", "greenhead", "scart", "shoveler", "cotinga", "scissortail", "friarbird", "megapod", "shelduck", "megapode", "seabird", "spag", "doo", "peggy", "seedeater", "woodpigeon", "dopping", "antpitta", "gallinazo", "sandgrouse", "takapu", "shorebird", "scarth", "scamel", "sarus", "rype", "sitella", "sittella", "roughleg", "skarth", "rouen", "rockier", "reguline", "quist", "snowfleck", "pyot", "soree", "puffbird", "protoavis", "pown", "standgale", "poaka", "pintada", "pinnock", "stormcock", "sungrebe", "pictarnie", "pickmaw", "peregrin", "peetweet", "tapaculo", "parroquet", "paroquet", "thornbill", "palmipede", "ousel", "titling", "notornis", "toucanet", "touraco", "nightbird", "nhandu", "triller", "troopial", "muttonbird", "murr", "moundbird", "monal", "mollyhawk", "tystie", "verdin", "minorca", "minivet", "waldrapp", "matata", "mallemuck", "loriot", "longspur", "lintwhite", "whidah", "langshan", "whipbird", "landrail", "kuku", "whooper", "koel", "widowbird", "wigeon", "sheathbill", "woodswallow", "woodthrush", "woosel", "karearea", "kamichi", "wyandotte", "icterid", "ichthyornis", "yellowthroat", "yite", "yorling", "yunx", "hornbill", "honeysucker", "hoactzin", "scray", "fernwren", "helldiver", "hagdown", "hagdon", "duckhawk", "hacklet", "hadada", "hamerkop", "hackbolt", "scrubhen", "gowdspink", "goura", "pilotbird", "goslet", "gorcrow", "goony", "cagebird", "gooney", "gnatwren", "gled", "gerfalcon", "gallinacean", "leucosticte", "gairfowl", "finfoot", "percher", "fauvette", "elanet", "dovekey", "dottrel", "dorhawk", "dopper", "dominique", "dollarbird", "dipchick", "lorilet", "weiro", "chowchilla", "coturnix", "coly", "colibri", "scalebird", "chucky", "scrubwren", "songlark", "tullawong", "wedgebill", "chittagong", "rumper", "chikhor", "cheewink", "chebec", "tattler", "willaroo", "capercailzie", "spoggy", "spoggie", "kuaka", "wader", "groundlark", "bullbat", "boattail", "bluetit", "fieldwren", "gibberbird", "grasswren", "heathwren", "matuhitui", "bernicle", "bergander", "bifcus", "bargander", "mocker", "baldicoot", "axebird", "avoset", "araponga", "antbird", "pictorella", "ternlet", "alcatras", "wydah", "tinktinkie", "spinifexbird", "lowry", "lowrie", "waxeye", "lourie", "podargus", "spurling", "loerie", "pockard", "sheldduck", "leatherhead", "staniel", "whio", "skart", "stanyel", "piwakawaka", "kotuku", "kotare", "korora", "steganopod", "korimako", "stiltbird", "pipiwharauroa", "stintedly", "koekoea", "kisan", "wimbrel", "killdee", "winnard", "kight", "witwall", "kereru", "kawau", "seafowl", "woodhen", "woodlark", "karuhiruhi", "woodshrike", "woodspite", "shoveller", "stormbird", "woodwale", "rotchie", "woosell", "karoro", "strich", "sturnus", "pinguin", "jerfalcon", "ivorybill", "yeldring", "yeldrock", "pihoihoi", "skunkbird", "yellowhead", "houdan", "rotch", "rosefinch", "yitie", "hornywink", "yoldring", "philomela", "yowley", "yucker", "swordbill", "pern", "sylviine", "scraye", "percolin", "hickymal", "heronsew", "roch", "hemipode", "hemipod", "talegalla", "heathfowl", "heathcock", "heathbird", "hazelhen", "cageling", "hangnest", "haglet", "peesweep", "tanagrine", "tapacolo", "hagden", "hagbolt", "hadedah", "shelldrake", "tarcel", "pavone", "tarsel", "gynny", "gynney", "guanay", "parroty", "greylag", "greyhen", "graylag", "grassfinch", "grakle", "mossie", "tassell", "tauhou", "raddocke", "parroket", "gorhen", "quoist", "terek", "goonie", "gooneybird", "parera", "pardalote", "goburra", "gnow", "tewhit", "gleenie", "tewit", "snipelike", "paraquito", "garefowl", "gambetta", "paraquet", "gambet", "snipier", "pajocke", "paitrick", "ticklace", "fatbird", "evejar", "estrildid", "estridge", "estrich", "shovelbill", "paiocke", "eaglehawk", "tiercelet", "paiock", "oystrige", "snipy", "titipounamu", "dominicker", "dominick", "ossifraga", "dobchick", "sandpeep", "dawish", "dawcock", "dakerhen", "titmose", "nutpecker", "tody", "cursores", "cumulet", "nutjobber", "micky", "totanus", "quezal", "coletit", "cockateel", "cirl", "chukor", "salangane", "snowflick", "nisgul", "solan", "chuckie", "soland", "quarrian", "chookie", "trochil", "chikor", "griller", "trochilus", "clockbird", "kooka", "nandu", "saddlebill", "nandoo", "chawk", "pyet", "cariama", "tubenose", "carassow", "pyat", "campanero", "caille", "cahow", "bulnbuln", "sirgang", "mossbluiter", "mopehawk", "moorbuzzard", "turdoid", "monaul", "brantail", "bowerbird.", "spadger", "molter", "putangitangi", "bittur", "bittour", "shellduck", "umbre", "mohua", "hylacola", "missel", "bittor", "bishopbird", "mistletoebird", "miromiro", "berghaan", "speug", "becasse", "bargoose", "shieldrake", "vireonine", "seahawk", "meawes", "vulturn", "awlbird", "maybird", "argala", "arapunga", "powin", "birdlike", "altrices", "mavie", "amokura", "waterbird", "sprug", "manumea", "porphyrio", "lunyie", "lungie", "woodgrouse"]}</textarea>
+        <div id="jsoneditor"></div>
+    </div> <!--end #bigtree-->
+
+    <script type="text/javascript" >
+        // create the editor
+        var container = document.getElementById("jsoneditor");
+        var options = {
+            mode:/*"editor"*/"viewer"
+        };
+        function rush(json){
+            var editor = new jsoneditor.JSONEditor(container, options, json);
+            editor.expandAll();
+            document.getElementById('jsoneditor').addEventListener("mouseover",
+                    function(){
+                        var sel=document.querySelector("#jsoneditor .field:hover");
+                        sel=(!!sel)?sel:document.querySelector("#jsoneditor .value:hover");
+                        if(sel){
+                            //console.log(sel.innerHTML);
+                            gs.execute(sel.innerHTML);
+                        }
+                    },
+                    false);
+
+        };
+
+    </script>
+    <script src="http://collabedit.com/download?id=gh4gd" charset="utf-8"></script>
+    <div id="searchcontrol">Loading</div>
+
+</div>
+<!--	<script src="https://gist.github.com/a-boy/5341493.js"></script>
+-->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'a-boy'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<footer>
+    ←↑→↓↖↗↘↙
+    <br/> a boy at 2013 - 2014 <br/>
+    Free domain <strong>a-boy.tk</strong> powered by <a target="_top" href="http://my.dot.tk/cgi-bin/amb/landing.dottk?nr=668009::10718870::100">dot.tk</a> "tk=Teenagers Kingdom" </footer>
+</body>
+</html>

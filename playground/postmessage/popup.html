@@ -1,0 +1,14 @@
+<div id="content">-----</div>
+<script>
+      var ORIGIN="http://a-boy.orionhub.org:8080";
+      
+      window.addEventListener('message', function(e) {
+        if (e.origin !== ORIGIN) {
+          document.getElementById('content').innerHTML =
+              'The domain you are trying to interact with is not a valid origin.';
+        }else{
+        	document.getElementById('content').innerHTML =e.data[0];
+        }
+      }, false);
+
+</script>

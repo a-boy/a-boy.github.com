@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<script>
+	var ORIGIN="http://a-boy.orionhub.org:8080";
+	var win= window.open(ORIGIN+"/playground/postmessage/popup.html","popupwin");
+		
+</script>
+<button onclick="win.postMessage([0,1,2,3], ORIGIN);">post</button>
+</body>
+</html>
