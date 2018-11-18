@@ -1,0 +1,23 @@
+﻿a-boy.tk/clip.txt
+
+https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?path=Linux_x64/
+https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/272801/chrome-linux.zip
+https://www.google.com/intl/en/chrome/browser/?platform=linux
+
+http://www.topcoder.com/?action=callback&utmSource=a_boy&utmCampaign=ReferralProgram
+http://dlc.sun.com.edgesuite.net/netbeans/8.0/final/bundles/netbeans-8.0-linux.sh
+http://www.mmnt.net/db/0/0/ftp.gmu.edu/mathematica
+
++ Eclipse standalone Help system:
+  helpSystem.displayHelp("/com.mycompany.mytool.doc/toc.xml");
+  java -classpath d:\myApp\eclipse\plugins\org.eclipse.help.base_[version].jar org.eclipse.help.standalone.Help -command displayHelp /com.mycompany.mytool.doc/tasks/task1.htm
+  
+  
++ chromium Search Engine Setting 收集了许多搜索引擎的URL
+
+table music（
+  id link stars song  songer  tags contributor  lastmodified  description
+）
+
+$ git config credential.helper store ##保存密码，不每次输入git账号密码#
+git config --global credential.helper 'cache --timeout 7200' #缓存密码2小时#

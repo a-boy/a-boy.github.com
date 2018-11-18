@@ -72,7 +72,7 @@ border:1px solid orange;
     //]]>
     </script>
 
-<p><span style="color:#cccc00">--Posts--</span></p>
+<p><span style="color:#cccc11">--Posts--</span></p>
 <div id="postList">
 
 </div>
@@ -100,7 +100,7 @@ border:1px solid orange;
 		req.open("GET", url, true);
 		//req.responseType="json";
 		req.onload = function(){
-			 document.getElementById('preview').innerHTML = marked(req.response)
+			 document.getElementById('preview').innerHTML = /*marked*/(req.response)
 		}
 		req.send(null);
 	}
