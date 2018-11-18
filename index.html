@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,7 +8,13 @@
     <script type="text/javascript" ></script>
     <script>function _(id){return document.getElementById(id);};</script>
     <style>
-
+body {
+	color: #ff9922
+}
+div.content
+{
+border:1px solid orange;
+}
 #searchcontrol .gsc-control {
 	width: 600px;
 }
@@ -17,6 +23,20 @@
 	float:left;
 }
 </style>
+
+</head>
+
+<body>
+<nav> <a href="http://a-boy.tk"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a> </nav>
+<a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';">---></a><br>
+
+<p><span style="color:#cccc11">--Playground--</span></p>
+<div id="pageList">
++ <a href="pages/changing-color.html">changing-color.html</a> - 轮换背景颜色<br>
++ <a href="pages/combinate-search.html">combinate-search.html</a> - 组合搜<br>
+</div>
++ <a href="https://github.com/avvboy/avvboy.github.io/tree/master/pages" target="_blank">...</a><br>
+
     <script src="http://www.google.com/jsapi"  type="text/javascript"></script>
     <script  type="text/javascript">
     //<![CDATA[
@@ -51,11 +71,6 @@
 		
     //]]>
     </script>
-</head>
-
-<body>
-<nav> <a href="http://a-boy.tk"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a> </nav>
-<a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';">---></a><br>
 
 <p><span style="color:#cccc00">--Posts--</span></p>
 <div id="postList">
@@ -63,14 +78,9 @@
 </div>
 + <a href="https://github.com/avvboy/avvboy.github.io/tree/master/posts" target="_blank">...</a><br>
 <input type="text" name="markfilename" id="markfilename" value="2017-02-07-四年前三月的湘江岸边.md" size=35><input type="button" value="预览" onclick="preview('posts/'+document.getElementById('mdfilename').value)">
-<div id="preview"></div>
 
-<p><span style="color:#cccc00">--Pages--</span></p>
-<div id="pageList">
-+ <a href="pages/changing-color.html">changing-color.html</a> - 轮换背景颜色<br>
-+ <a href="pages/combinate-search.html">combinate-search.html</a> - 组合搜<br>
-</div>
-+ <a href="https://github.com/avvboy/avvboy.github.io/tree/master/pages" target="_blank">...</a><br>
+
+<div id="preview"></div>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- automatic-size -->
@@ -97,7 +107,7 @@
 	preview('posts/2017-02-07-四年前三月的湘江岸边.md');
 	
 	function readPostList(){
-	var url='https://api.github.com/repos/'+GITHUB_HOME+'/contents/posts?ref=master'; 
+	var url='https://api.github.com/repos/'+'a-boy.github.com'+'/contents/posts?ref=master'; 
 	var req = new XMLHttpRequest();
 		req.open("GET", url, true);
 		req.onload = function(){
@@ -114,7 +124,7 @@
 	readPostList();
 
 	function readPageList(){
-	var url='https://api.github.com/repos/'+GITHUB_HOME+'/contents/pages?ref=master'; 
+	var url='https://api.github.com/repos/'+'a-boy.github.com'+'/contents/playground?ref=master'; 
 	var req = new XMLHttpRequest();
 		req.open("GET", url, true);
 		req.onload = function(){
