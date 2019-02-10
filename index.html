@@ -46,7 +46,163 @@ border:1px solid orange;
     var gs; 
     function OnLoad() {
 		// Create a search control
+	  var searchControl = new google.search.SearchControl();<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" type="image/icon" href="/favicon.ico" />
+    <title>a boy</title>
+ 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" ></script>
+    <script>function _(id){return document.getElementById(id);};</script>
+    <style>
+body {
+	color: #ff9922
+}
+div.content
+{
+border:1px solid orange;
+}
+#searchcontrol .gsc-control {
+	width: 600px;
+}
+#searchcontrol{
+	width:600px;
+	float:left;
+}
+</style>
+<script src="lib/marked.js"></script>
+</head>
+
+<body>
+<nav> <a href="http://a-boy.tk"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a>
+<span>曾经多少的痴心迷恋 只与爱情无关 </span></nav>
+<a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';">-yaya, 我好想你啊！你快回我的出租屋一趟看我照顾我好吗？我的微信号luoha_  你多买些水果吃，快回望月湖6片12栋的2楼那间看我一次吧----</a><br>
+
+<p><span style="color:#cccc11">--Playground--</span></p>
+<div id="pageList">
++ <a href="playground/changing-color.html">changing-color.html</a> - 轮换背景颜色<br>
++ <a href="playground/combinate-search.html">combinate-search.html</a> - 组合搜<br>
+</div>
++ <a href="https://github.com/avvboy/avvboy.github.io/tree/master/pages" target="_blank">...</a><br>
+
+    <script src="http://www.google.com/jsapi"  type="text/javascript"></script>
+    <script  type="text/javascript">
+    //<![CDATA[
+    google.load('search', '1');
+	  
+    var gs; 
+    function OnLoad() {
+		// Create a search control
 	  var searchControl = new google.search.SearchControl();
+	  gs=searchControl;
+	searchControl.addSearcher(new google.search.ImageSearch());
+  searchControl.addSearcher(new google.search.WebSearch());
+  searchControl.addSearcher(new google.search.VideoSearch());
+  searchControl.addSearcher(new google.search.BlogSearch());
+  searchControl.addSearcher(new google.search.NewsSearch());
+  searchControl.addSearcher(new google.search.BookSearch());
+  
+  searchControl.setResultSetSize(8);
+      // Set the Local Search center point
+      //localSearch.setCenterPoint(", solar");
+ // draw in tabbed layout mode
+  var drawOptions = new google.search.DrawOptions();
+  drawOptions.setDrawMode(google.search.SearchControl.DRAW_MODE_TABBED);
+
+      // tell the searcher to draw itself and tell it where to attach
+      searchControl.draw(_("searchcontrol"), drawOptions);
+
+      // execute an inital search
+      searchControl.execute("cute girl~");
+    }
+    google.setOnLoadCallback(OnLoad);
+		
+    //]]>
+    </script>
+
+<p><span style="color:#cccc11">--Posts--</span></p>
+<div id="postList">
+
+</div>
++ <a href="https://github.com/avvboy/avvboy.github.io/tree/master/posts" target="_blank">...</a><br>
+<input type="text" name="markfilename" id="markfilename" value="2017-02-07-四年前三月的湘江岸边.md" size=35><input type="button" value="预览" onclick="preview('posts/'+document.getElementById('mdfilename').value)">
+
+
+<div id="preview"></div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- automatic-size -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9506751992947371"
+     data-ad-slot="6237817689"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+	function preview(url){
+		var req = new XMLHttpRequest();
+		req.open("GET", url, true);
+		//req.responseType="json";
+		req.onload = function(){
+			 document.getElementById('preview').innerHTML = marked(req.response)
+		}
+		req.send(null);
+	}
+	preview('posts/2017-02-07-四年前三月的湘江岸边.md');
+	
+	function readPostList(){
+	var url='https://api.github.com/repos/'+'a-boy/a-boy.github.com'+'/contents/posts?ref=master'; 
+	var req = new XMLHttpRequest();
+		req.open("GET", url, true);
+		req.onload = function(){
+			var posts= JSON.parse(req.response);
+			var html='';
+			posts.forEach(function(e) {
+				console.log(e.name);
+				html+='+ <a onclick="preview(\''+e.path+'\')" href="#'+e.path+'">'+e.name+'</a><br> ';
+			});
+			document.getElementById('postList').innerHTML = html;
+		}
+		req.send(null);
+	}
+	readPostList();
+
+	function readPageList(){
+	var url='https://api.github.com/repos/'+'a-boy/a-boy.github.com'+'/contents/playground?ref=master'; 
+	var req = new XMLHttpRequest();
+		req.open("GET", url, true);
+		req.onload = function(){
+			var posts= JSON.parse(req.response);
+			var html='';
+			posts.forEach(function(e) {
+				console.log(e.name);
+				html+='+ <a href="'+e.path+'">'+e.name+'</a><br> ';
+			});
+			document.getElementById('pageList').innerHTML = html;
+		}
+		req.send(null);
+	}
+	readPageList();
+  </script>
+<div id="links"><a href="http://qing.tk">纯情部落-qing.tk</a> &nbsp; QQ群 <a href="http://qun.qzone.qq.com/group#!/499866721/home">纯情部落火星人学习班</a> <span>499866721</span> </div>
+<audio height="32" src="boot.ogg" controls></audio>
+<div id="footer"><span style="color:#0f0">a_boy </span>
+<span>--></span>
+
+    ←↑→↓↖↗↘↙
+    <br/> a boy at 2013→2014→...→2018→2019       <br/>
+    Free domain <strong>a-boy.tk</strong> powered by <a href="http://my.dot.tk/cgi-bin/amb/landing.dottk?nr=668009::10718870::1" target="_new" style="text-decoration: none">
+	<span style="color:#0f0;"><u>dot.tk</u></span></a> "tk=Teenagers Kingdom" 
+</div>
+</body>
+</html>
+
 	  gs=searchControl;
 	searchControl.addSearcher(new google.search.ImageSearch());
   searchControl.addSearcher(new google.search.WebSearch());
