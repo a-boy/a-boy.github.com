@@ -27,3 +27,12 @@ phonegap
 
 ### 2018-11-18
 RapidSVN, VNC Viewer, VisualSVN Server, winamp27_full.exe
+
+### 2019-05-16
+去年做的或搭建的三个小东西
+http://dinosaurlet.herokuapp.com
+jupyter-fly.herokuapp.com
+flyfqu.bitbucket.io
+
+zen.yandex.com阅读RSS Feed新闻
+Yandex.Disk中的截屏分享程序真好使，yandex browser简洁流畅，我感觉yandex的技术设计很符合我的个人习惯，用起来赏心悦目行云流水
