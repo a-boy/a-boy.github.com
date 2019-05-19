@@ -36,3 +36,8 @@ flyfqu.bitbucket.io
 
 zen.yandex.com阅读RSS Feed新闻
 Yandex.Disk中的截屏分享程序真好使，yandex browser简洁流畅，我感觉yandex的技术设计很符合我的个人习惯，用起来赏心悦目行云流水
+
+### 2019-05-19 日 阴雨
+学习cmd编程
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/at
+https://docs.microsoft.com/zh-cn/windows-server/administration/windows-commands/at
