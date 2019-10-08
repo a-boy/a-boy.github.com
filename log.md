@@ -41,3 +41,21 @@ Yandex.Disk中的截屏分享程序真好使，yandex browser简洁流畅，我�
 学习cmd编程
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/at
 https://docs.microsoft.com/zh-cn/windows-server/administration/windows-commands/at
+
+
+### 2019-10-09 三
+如何为Thinkpad X201i 安装Linux下的 WiFi 模块固件及联网工具? 在其他能联网的机器上，转到 https://packages.debian.org 页面， 下载以下 deb 包：
+
+firmware-iwlwifi：WiFi 模块固件，从安装出错提示中获悉
+wireless-tools 及其依赖：无线工具集
+wpasupplicant 及其依赖：无线联网工具
+在安装好这些包之后，在 /etc/network/interfaces 中加入如下 内容：
+
+auto wlan0
+iface wlan0 inet dhcp
+    wpa-ssid <无线 ssid 名>
+    wpa-psk <无线密码>
+保存后，再执行：
+
+ifup wlan0
+即可正常连接无线网络了。
