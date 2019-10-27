@@ -117,7 +117,8 @@ document.body.style.backgroundColor='#' + Math.floor(Math.random() * 0xffffff).t
 var poem=
 '我们从亘古的神话中走来\n\
 时光带我们去远方';
-if(prompt(poem,'..----')){
+if(!prompt(poem,'..----')){
+	$('a[href="#"]').click()
 }
 </script>
 </body>
