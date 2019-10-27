@@ -21,21 +21,21 @@ border:1px solid orange;
 	float:left;
 }
 </style>
+<script src="lib/polar.js"></script>
 <script src="lib/marked.js"></script>
 </head>
 
 <body>
-<nav> <a href="http://a-boy.tk"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a>
-<span>曾经多少的痴心迷恋 只与爱情无关 </span></nav>
-<script>
-	function _(id){return document.getElementById(id)};	
-	document.body.style.backgroundColor='#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
-</script>
-<a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';">-yaya, 我好想你啊！我的新手机号173oo799703，我真想在你身边生活！你能又回望月湖1片7栋1楼(姐姐给我买的房子)看我一次吗？记得多买些水果多去超市...你也买个手机吧！我今年4月份时买的红米6手机4GB内存64GB存储, 办的电信无忧卡，挺便宜又好用. yaya, 我太想你了......<br>----</a><br>
+<div> <a href="http://a-boy.tk"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a>
+<span>曾经多少的痴心迷恋 只与爱情无关 </span></div>
+<a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';" contenteditable>-yaya, 我好想你啊！我的新手机号173oo799703，我真想在你身边生活！你能又回望月湖1片7栋1楼(姐姐给我买的房子)看我一次吗？记得多买些水果多去超市...你也买个手机吧！我今年4月份时买的红米6手机4GB内存64GB存储, 办的电信无忧卡，挺便宜又好用. yaya, 我太想你了......<br>
+----</a><br>
+<nav><a href="https://github.com/a-boy/volcano">volcano</a> <a href="https://github.com/a-boy/playmath">playmath</a>  <a href="/rush">rush!</a> 
+<a href="https://github.com/a-boy/play">play</a> <a href="https://github.com/a-boy/mi">《迷·黑客生活翼装飞行录》</a></nav>
 
 <p><span style="color:#cccc11">--Poem--</span></p>
 <div id="ahmengPoem">
-	♩♪♫♬♭♮♯<a href="https://github.com/a-boy/volcano">Volcano - 阿蒙音乐诗歌游乐场</a>--<br>
+	♩♪♫♬♭♮♯<a href="https://github.com/a-boy/volcano">Volcano</a> - 阿蒙音乐诗歌游乐场--<br>
 	→ <a href="http://a-boy.tk/volcano/1%20%E7%BA%AF%E6%83%85%E4%B8%BB%E4%B9%89%E8%AF%97%E6%AD%8C19%E9%A6%96/chunqingzhuyi.html">[阿蒙诗歌习作第1辑] 纯情主义诗歌19首</a><br>
 	→ <a href="https://github.com/a-boy/volcano/tree/master/2%20%E5%9D%A0%E5%85%A5%E7%88%B1%E6%B2%B3%E7%9A%84%E7%81%AB%E6%98%9F%E4%BA%BA">[阿蒙诗歌习作第2辑] 坠入爱河的火星人</a><br>
 	→ <a href="http://a-boy.tk/volcano/3%20%E9%9B%A8%E5%A4%9C%E7%9A%84%E6%98%9F%E8%BE%89/Starlight-in-the-Rainy-Night.html">[阿蒙诗歌习作第3辑] 雨夜的星辉</a><br>
@@ -112,10 +112,13 @@ border:1px solid orange;
     Free domain <strong>a-boy.tk</strong> powered by <a href="http://my.dot.tk/cgi-bin/amb/landing.dottk?nr=668009::10718870::1" target="_new" style="text-decoration: none">
 	<span style="color:#0f0;"><u>dot.tk</u></span></a> "tk=Teenagers Kingdom" 
 </div>
-<script>var poem=
+<script>
+document.body.style.backgroundColor='#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
+var poem=
 '我们从亘古的神话中走来\n\
 时光带我们去远方';
-prompt(poem)
+if(prompt(poem,'..----')){
+}
 </script>
 </body>
 </html>
