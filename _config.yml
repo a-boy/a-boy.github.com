@@ -1,10 +1,10 @@
 # Site settings
-title: a-boy.tk  曾经多少的痴心迷恋 只与爱情无关
+title: a-boy  曾经多少的痴心迷恋 只与爱情无关
 keywords: 诗歌,数学,音乐原创,Web,javascript,HTML,编程,极限学习,科技创造
-email: avvboy @gmail.com
+email: avvboy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     纯情主义
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://a-boy.tk" # the base hostname & protocol for your site
-twitter_username: a___boy
+url: "https://a-boy.github.io" # the base hostname & protocol for your site
+twitter_username: 
 github_username:  a-boy
