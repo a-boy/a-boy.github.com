@@ -56,7 +56,7 @@ border:1px solid orange;
 <div id="postList">+ <a onclick="preview('posts/2017-02-07-四年前三月的湘江岸边.md')" href="#posts/2017-02-07-四年前三月的湘江岸边.md">2017-02-07-四年前三月的湘江岸边.md</a><br>
 </div>
 + <a href="https://github.com/a-boy/a-boy.github.com/tree/master/posts" target="_blank">...</a><br>
-<input type="text" name="markfilename" id="markfilename" value="2017-02-07-四年前三月的湘江岸边.md" size=35><input type="button" value="预览" onclick="preview('posts/'+document.getElementById('mdfilename').value)">
+<!-- <input type="text" name="markfilename" id="markfilename" value="2017-02-07-四年前三月的湘江岸边.md" size=35><input type="button" value="预览" onclick="preview('posts/'+document.getElementById('mdfilename').value)"> -->
 
 <div id="preview"></div>
 <br><img src="album/QingchunMengxiang2018/IMG_20180309_132643.jpg" width="800" border="0" alt="20180309在湘江小河滩">
@@ -82,7 +82,7 @@ border:1px solid orange;
 			var html='';
 			posts.forEach(function(e) {
 				console.log(e.name);
-				html+='+ <a onclick="preview(\''+e.path+'\')" href="#'+e.path+'">'+e.name+'</a><br> ';
+				html+='+ <a href="'+e.path.slice(0,-3)+'.html">'+e.name+'</a><br>';
 			});
 			document.getElementById('postList').innerHTML = html;
 		}
@@ -108,16 +108,17 @@ border:1px solid orange;
 	readPageList();
   </script>
 <div id="links"><a href="https://qing.tk">纯情部落</a> <a href="https://2293.github.io/mathdemos/">MathDemos</a> 
-	<a href="https://cody-luo.github.io">https://cody-luo.github.io</a>
-	&nbsp; QQ群 <a href="http://qun.qzone.qq.com/group#!/499866721/home">火星人学习班</a> <span>499866721</span>
+	<a href="http://qun.qzone.qq.com/group#!/499866721/home">QQ群:火星人学习班</a> <span>499866721</span>
 </div>
 <audio height="32" src="boot.ogg" controls></audio>
 <div id="footer">
-<span>--> ☼☽☾☿♀♁♂♃♄♅♆♇♈♉♊♋♌♍♎♏♐♑♒♓♔♕♖♗♘♙♚♛♜♝♞♟♠♡♢♣♤♥♦♧♨♩♪♫♬♭♮♯ </span><br/>
+<span>--> ☼☽☾☿♀♁♂♃♄♅♆♇♈♉♊♋♌♍♎♏♐♑♒♓♔♕♖♗♘♙♚♛♜♝♞♟♠♡♢♣♤♥♦♧♨♩♪♫♬♭♮♯ </span>
 ←↑→↓↖↗↘↙<br/>
-<span style="color:#0f0">a boy</span> at 2013→2014→...→2018→2019→2020→2021→2022→2023→2024 <br/>
+<span style="color:#0f0">a boy</span>at 2013→2024<br/>
+<!-- 
     Free domain <strong>a-boy.tk</strong> powered by <a href="http://my.dot.tk/cgi-bin/amb/landing.dottk?nr=668009::10718870::1" target="_new" style="text-decoration: none">
 	<span style="color:#0f0;"><u>dot.tk</u></span></a> "tk=Teenagers Kingdom" 
+	 -->
 </div>
 <script async>
 document.body.style.backgroundColor='#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
