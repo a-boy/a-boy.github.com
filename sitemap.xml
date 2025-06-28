@@ -4,17 +4,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
     <url>
-        <loc>http://a-boy.tk{{ post.url | remove: 'index.html' }}</loc>
+        <loc>{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 
     {% for page in site.pages %}
-    {% if page.layout != nil %}
     {% if page.layout != 'feed' %}
     <url>
-        <loc>http://a-boy.tk{{ page.url | remove: 'index.html' }}</loc>
+        <loc>{{ page.url | remove: 'index.html' }}</loc>
     </url>
     {% endif %}
-    {% endif %}
     {% endfor %}
+    
 </urlset>
