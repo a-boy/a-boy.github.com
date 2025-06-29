@@ -1,9 +1,0 @@
-static site generator
-
-dynamic template
-   ejs
-   jade
-  
-editor tools
-  emmet
-  

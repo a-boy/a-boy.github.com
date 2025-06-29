@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -30,11 +33,13 @@ border:1px solid orange;
 <body>
 <div> <a href="/"><span style="font-size:24pt;color:#ff9900">⌂</span>a boy</a>
 <span>曾经多少的痴心迷恋 只与爱情无关 </span></div>
-<div>yaya, 2025我好想你啊！我真想在你身边生活！我的新手机号173oo799703，你能又回望月湖1片7栋1楼(姐姐给我买的房子)看我一次吗？记得多买些水果多去超市...你也买个手机吧！yaya, 我太想你了......<br></div>
 <a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';" contenteditable>
 ----</a><br>
 <nav><a href="https://github.com/a-boy/volcano">volcano</a> <a href="https://github.com/a-boy/playmath">playmath</a>  <a href="/rush">rush!</a> 
-<a href="https://github.com/a-boy/play">play</a> <a href="https://github.com/a-boy/mi">《迷·黑客生活翼装飞行录》</a> <a href="https://cody-luo.github.io/">blog</a> <a href="/pingpong/">迷彩乒乓</a></nav>
+<a href="https://github.com/a-boy/play">play</a> <a href="https://github.com/a-boy/mi">《迷·黑客生活翼装飞行录》</a> <a href="/pingpong/">迷彩乒乓</a></nav>
+<!-- <script async src="https://cse.google.com/cse.js?cx=012098598846403243334:vwk9oud8woe">
+</script>
+<div class="gcse-search"></div> -->
 
 <p><span style="color:#cccc11">--Poem--</span></p>
 <div id="ahmengPoem">
@@ -47,78 +52,35 @@ border:1px solid orange;
 	→ <a href="/volcano/5%20%E6%98%9F%E6%B2%99%E6%A2%A6%E6%B3%AA/StarSandDreamTears.html">[阿蒙诗歌习作第5辑] 星沙梦泪</a><br>
 </div>
 
-<p><span style="color:#cccc11">--Playground--</span></p>
-<div id="pageList">+ <a href="playground/bookmarklet.html">bookmarklet.html</a><br> + <a href="playground/changing-color.html">changing-color.html</a><br> + <a href="playground/combinate-search.html">combinate-search.html</a><br> + <a href="playground/gview.html">gview.html</a><br> + <a href="playground/html5-swing-poem">html5-swing-poem</a><br> + <a href="playground/htmleditor">htmleditor</a><br> + <a href="playground/play-numericjs.html">play-numericjs.html</a><br> + <a href="playground/postmessage">postmessage</a><br> + <a href="playground/qqvisitor.html">qqvisitor.html</a><br> + <a href="playground/rush">rush</a><br> + <a href="playground/scmplayer.html">scmplayer.html</a><br> + <a href="playground/semantic-markup.html">semantic-markup.html</a><br> + <a href="playground/test1,htm">test1,htm</a><br> + <a href="playground/utf-8-sailing">utf-8-sailing</a><br> </div>
-+ <a href="https://github.com/a-boy/a-boy.github.com/tree/master/playground" target="_blank">...</a><br>
-
- 
 <p><span style="color:#cccc11">--Posts--</span></p>
-<div id="postList">+ <a onclick="preview('posts/2017-02-07-四年前三月的湘江岸边.md')" href="#posts/2017-02-07-四年前三月的湘江岸边.md">2017-02-07-四年前三月的湘江岸边.md</a><br>
+<div id="postList">
+{% for post in site.posts %}
+  - <a href="{{ post.url }}">{{ post.title }}</a> <span style="color:#aaa">{{ post.date | date: "%Y-%m-%d" }}</span><br/>
+{% endfor %} 	
 </div>
-+ <a href="https://github.com/a-boy/a-boy.github.com/tree/master/posts" target="_blank">...</a><br>
-<!-- <input type="text" name="markfilename" id="markfilename" value="2017-02-07-四年前三月的湘江岸边.md" size=35><input type="button" value="预览" onclick="preview('posts/'+document.getElementById('mdfilename').value)"> -->
+
+<p><span style="color:#cccc11">--Pages--</span></p>
+<div id="pageList">{% for file in site.static_files %}
+{% if file.extname == ".html" %}
+  + <a href="{{ file.path }}">{{ file.path | replace_first: '/', '' }}</a><br/>
+{% endif %}
+{% endfor %}</div>
 
 <div id="preview"></div>
 <br><img src="album/QingchunMengxiang2018/IMG_20180309_132643.jpg" width="800" border="0" alt="20180309在湘江小河滩">
 <br><img src="album/QingchunMengxiang2018/IMG_20180226_201950.jpg" width="800" border="0" alt="20180226在1片转角二楼 青春梦想 那时地铁还没有修好"><br>
-<script defer>
-	function preview(url){
-		var req = new XMLHttpRequest();
-		req.open("GET", url, true);
-		//req.responseType="json";
-		req.onload = function(){
-			 document.getElementById('preview').innerHTML = marked(req.response)
-		}
-		req.send(null);
-	}
-	preview('posts/2017-02-07-四年前三月的湘江岸边.md');
-	
-	function readPostList(){
-	var url='https://api.github.com/repos/'+'a-boy/a-boy.github.com'+'/contents/posts?ref=master'; 
-	var req = new XMLHttpRequest();
-		req.open("GET", url, true);
-		req.onload = function(){
-			var posts= JSON.parse(req.response);
-			var html='';
-			posts.forEach(function(e) {
-				console.log(e.name);
-				html+='+ <a href="'+e.path.slice(0,-3)+'.html">'+e.name+'</a><br>';
-			});
-			document.getElementById('postList').innerHTML = html;
-		}
-		req.send(null);
-	}
-	readPostList();
-
-	function readPageList(){
-	var url='https://api.github.com/repos/'+'a-boy/a-boy.github.com'+'/contents/playground?ref=master'; 
-	var req = new XMLHttpRequest();
-		req.open("GET", url, true);
-		req.onload = function(){
-			var posts= JSON.parse(req.response);
-			var html='';
-			posts.forEach(function(e) {
-				console.log(e.name);
-				html+='+ <a href="'+e.path+'">'+e.name+'</a><br> ';
-			});
-			document.getElementById('pageList').innerHTML = html;
-		}
-		req.send(null);
-	}
-	readPageList();
-  </script>
 <div id="links"><a href="https://qing.tk">纯情部落</a> <a href="https://2293.github.io/mathdemos/">MathDemos</a> 
 	<a href="http://qun.qzone.qq.com/group#!/499866721/home">QQ群:火星人学习班</a> <span>499866721</span>
 </div>
 <audio height="32" src="boot.ogg" controls></audio>
 <div id="footer">
-<span>--> ☼☽☾☿♀♁♂♃♄♅♆♇♈♉♊♋♌♍♎♏♐♑♒♓♔♕♖♗♘♙♚♛♜♝♞♟♠♡♢♣♤♥♦♧♨♩♪♫♬♭♮♯ </span>
-←↑→↓↖↗↘↙<br/>
+<span>!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</span>
+<br/>
+<span>☼☽☾☿♀♁♂♃♄♅♆♇♈♉♊♋♌♍♎♏♐♑♒♓♔♕♖♗♘♙♚♛♜♝♞♟♠♡♢♣♤♥♦♧♨♩♪♫♬♭♮♯</span>
+<br/>
+<span>⭠⭡⭢⭣⭤⭥⭦⭧⭨⭩⭪⭫⭬⭭⭮⭯⭰⭱⭲⭳ ❶❷❸❹❺❻❼❽❾❿➀➁➂➃➄➅➆➇➈➉➊➋➌➍➎➏➐➑➒➓</span>
+<br/>
 <span style="color:#0f0">a boy</span> @2013→2025<br/>
-<!-- 
-    Free domain <strong>a-boy.tk</strong> powered by <a href="http://my.dot.tk/cgi-bin/amb/landing.dottk?nr=668009::10718870::1" target="_new" style="text-decoration: none">
-	<span style="color:#0f0;"><u>dot.tk</u></span></a> "tk=Teenagers Kingdom" 
-	 -->
 </div>
 <script async>
 document.body.style.backgroundColor='#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');

@@ -4,16 +4,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
     <url>
-        <loc>{{ post.url | remove: 'index.html' }}</loc>
+        <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 
     {% for page in site.pages %}
     {% if page.layout != 'feed' %}
     <url>
-        <loc>{{ page.url | remove: 'index.html' }}</loc>
+        <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
     </url>
     {% endif %}
     {% endfor %}
-    
+
+    {% for file in site.static_files %}
+      {% if file.extname == ".html" %}
+      <url>
+        <loc>{{ site.url }}{{ file.path }}</loc>
+      </url>
+      {% endif %}
+    {% endfor %}
 </urlset>
