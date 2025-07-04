@@ -62,7 +62,7 @@ border:1px solid orange;
 <p><span style="color:#cccc11">--Pages--</span></p>
 <div id="pageList">{% for file in site.static_files %}
 {% if file.extname == ".html" %}
-  + <a href="{{ file.path }}">{{ file.path | replace_first: '/', '' }}</a><br/>
+  + <a href="{{ file.path | replace_first: '/', '' }}">{{ file.path | replace_first: '/', '' }}</a><br/>
 {% endif %}
 {% endfor %}</div>
 
