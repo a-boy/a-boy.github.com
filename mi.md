@@ -545,3 +545,95 @@ In April 2023, Warp announced Warp AI, which integrated an OpenAI large language
 https://lmstudio.ai/ Download and run local models, Run gpt-oss, Qwen, Gemma, DeepSeek on your computer.
 
 TF卡
+
+https://labs.google/fx
+
+DNS欺骗(DNS Spoofing)也被称为DNS缓存投毒(DNS Cache Poisoning)，是一种计算机安全攻击手段。攻击者通过利用DNS解析器软件的漏洞，向DNS解析器的缓存中注入虚假的DNS
+
+
+https://utcp.io
+UTCP is a lightweight, secure, and scalable standard that enables AI agents and applications to discover and call tools directly using their native protocols - ...
+
+音乐魔石  https://yym4.com/search/宋小睿  
+
+duckdb  https://duckdb.org/docs/stable/
+https://shell.duckdb.org/  
+npm install @duckdb/node-api
+pip install duckdb
+
+```
+# Get the top-3 busiest train stations
+import duckdb
+duckdb.sql("""
+    SELECT station, count(*) AS num_services
+    FROM train_services
+    GROUP BY ALL
+    ORDER BY num_services DESC
+    LIMIT 3;
+    """)
+```
+
+质数 73939133
+
+https://ninite.com/
+Install and Update All Your Programs at Once
+No toolbars. No clicking next. Just pick your apps and go.
+
+https://www.gamespot.com.cn/en/downloads/19276
+
+```
+/* 手机（小于 600px） */
+@media (max-width: 599px) {
+    .container {
+        flex-direction: column; /* 在手机上垂直排列 */
+    }
+    .item {
+        width: 100%; /* 项目占据 100% 宽度 */
+    }
+}
+```
+
+使用Windows语音识别快捷键
+Win + H：快速启动语音输入（推荐）
+Ctrl + Win + S：切换语音识别模式
+Alt + Shift + C：取消当前语音输入
+
+cmd "C:\Program Files\EditPlus\editplus.exe" -d "E:\cloud\github\2293"
+
+https://support.github.com/request
+
+https://www.scmp.com/tech
+
+https://www.doubao.com/thread/w280275885d67e7b2 豆包音乐生成 奋斗点亮希望 罗哈/豆包
+
+## 2025-09-15 06:42:23
+https://github.com/Mercury13/unicodia Encyclopedia of Unicode characters
+OSSSR.COM  发现、学习、分享，与软件爱好者共同成长。  
+
+Koto City, Tokyo
+
+Koto
+https://koto.studio
+Optimists building brand and digital for the most impactful companies of today and the founders defining tomorrow.
+
+https://www.city.koto.lg.jp/
+江东区役所
+公司编号：6000020131083
+东京都江东区东洋4-11-28 135-8383 电话号码：03-3647-9111（总机）
+
+https://en.wikipedia.org › wiki › Koto_(instrument)
+The koto (箏 or 琴) is a Japanese plucked half-tube zither instrument, and the national instrument of Japan.
+
+https://en.wikipedia.org › wiki › Biwa
+The biwa (Japanese: 琵琶) is a Japanese short-necked wooden lute traditionally used in narrative storytelling. The biwa is a plucked string instrument
+
+feijipan.com
+
+- http://aiwa.fun/ Your Super AI-Powered Virtual Assistant for WhatsApp
+- aiwa.xyz  AI-Powered Hybrid Wallet
+
+正确使用 IPv6 地址访问本机服务的方法：
+需要在 IPv6 地址前后加 方括号 []，明确告诉浏览器这是一个 IPv6 地址，格式为：
+[::1]
+如果服务有特定端口（如 8080），需在括号后加端口号，例如：
+[::1]:8080
