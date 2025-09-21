@@ -637,3 +637,34 @@ feijipan.com
 [::1]
 如果服务有特定端口（如 8080），需在括号后加端口号，例如：
 [::1]:8080
+
+https://chinese.yabla.com/
+https://english.yabla.com/player_cdn.php?id=19672&tlang_id=zh_CN
+
+
+Marimo Notebook
+https://marimo.io https://marimo.app/
+Transform data, train models, and run SQL queries with marimo — feels like an AI-native reactive notebook, stored as Git-friendly reproducible Python.
+
+import marimo as mo
+
+mo.md("# Welcome to [marimo](https://github.com/marimo-team/marimo)! 🌊🍃")
+
+
+Documentation: https://typer.tiangolo.com
+Source Code: https://github.com/fastapi/typer
+
+Typer is a library for building CLI applications that users will love using and developers will love creating. Based on Python type hints.
+
+It's also a command line tool to run scripts, automatically converting them to CLI applications.
+Typer is FastAPI's little sibling, it's the FastAPI of CLIs.
+
+
+https://github.com/Textualize/rich
+Rich is a Python library for rich text and beautiful formatting in the terminal.
+The Rich API makes it easy to add color and style to terminal output. Rich can also render pretty tables, progress bars, markdown, syntax highlighted source code, tracebacks, and more — out of the box.
+
+Rich 是一个 Python 库，可以为您在终端中提供富文本和精美格式。
+Rich 的 API 让在终端输出颜色和样式变得很简单。此外，Rich 还可以绘制漂亮的表格、进度条、markdown、语法高亮的源代码以及栈回溯信息（tracebacks）等——开箱即用。
+https://calmcode.io/course/rich/introduction
+c9.io 现在跳转到 https://aws.amazon.com/cn/cloud9
