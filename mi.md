@@ -668,3 +668,37 @@ Rich 是一个 Python 库，可以为您在终端中提供富文本和精美格�
 Rich 的 API 让在终端输出颜色和样式变得很简单。此外，Rich 还可以绘制漂亮的表格、进度条、markdown、语法高亮的源代码以及栈回溯信息（tracebacks）等——开箱即用。
 https://calmcode.io/course/rich/introduction
 c9.io 现在跳转到 https://aws.amazon.com/cn/cloud9
+AWS Cloud9 不再面向新客户提供。AWS Cloud9 的现有客户可以继续照常使用该服务。了解详情
+
+https://apod.nasa.gov/apod/archivepixFull.html Astronomy Picture of the Day Archive
+
+许多开源项目提供了基于 noVNC 的在线演示环境。例如，DistroSea(https://distrosea.com/) 就允许用户直接在浏览器中“试驾”60 多种 Linux 发行版。DistroSea 免费开放，无需注册即可启动虚拟机。
+OnWorks 在线 VPS 也是一个类似平台（参见 https://www.onworks.net/ ），提供免费云端工作站。OnWorks 支持多种 Linux（如 Edubuntu、Lubuntu、Ubuntu 22 等）以及在线 Windows/Mac 仿真环境，通过浏览器运行完整系统。官方介绍称：“OnWorks 是一个免费在线 VPS 服务商，提供免费的工作站环境……
+
+https://humphd.github.io/browser-shell/
+
+https://github.com/Gar-b-age/CookLikeHOC 像老乡鸡🐔那样做饭。
+https://cooklikehoc.soilzhu.su/%E7%82%92%E8%8F%9C/%E5%AE%B6%E5%B8%B8%E5%B0%8F%E7%82%92
+
+trayChrome https://github.com/cornradio/tray-chrome
+
+https://www.zhiyuan-robot.com/	
+
+## 2025-09-23 08:42:40
+https://csacademy.com/app/graph_editor/
+
+https://js.cytoscape.org/ https://github.com/cytoscape/cytoscape.js   https://js.cytoscape.org/demos/circle-layout/
+
+https://gojs.net/beta/samples/
+
+https://demo.billionmail.com/smtp
+Custom SMTP Relay
+Bound Domain：
+bimail.io
+DNS records need updating
+Server：
+mail.bimail.io
+Port：
+587
+Username：
+bimail
