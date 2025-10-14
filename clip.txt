@@ -21,3 +21,5 @@ table music（
 
 $ git config credential.helper store ##保存密码，不每次输入git账号密码#
 git config --global credential.helper 'cache --timeout 7200' #缓存密码2小时#
+
+https://github.com/itxve/fetch-clash-node/raw/refs/heads/main/node/merge.yaml   FlClash
