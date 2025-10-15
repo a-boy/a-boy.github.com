@@ -1,0 +1,1851 @@
+20250828 今天收到新手机，真的很高兴！
+
+Godot + .NET 强强联合，香在哪里？
+
+✅ 彻底免费：MIT开源协议，商业项目也绝无任何费用与抽成！真正做到收益全归你！
+✅ 极致轻量：引擎本体仅80M，下载解压即用，低配电脑也能流畅运行！
+✅ C#原生支持：拒绝冷门语言！Godot完美支持.NET，语法与Unity神似，初学者也能快速上手！
+✅ 设计超前：独特的节点（Node）系统，像搭积木一样构建游戏，开发效率直接拉满！
+✅ 2D之王：原生2D渲染效果吊打一众3D引擎改2D，像素游戏开发者的首选！
+
+3分钟创建你的第一个Godot C#游戏！（实战步骤）
+
+Dev snapshot: Godot 4.5 beta 6
+https://github.com/godotengine/godot-demo-projects
+
+Telegram是一款专注于安全性和速度的即时通讯应用，支持多平台，包括Android、iOS、Windows和macOS。Telegram的源代码是开源的，开发者可以使用其API和源代码创建自己的应用程序。
+
+获取Telegram源代码
+
+Telegram的Android版本源代码可以在GitHub上找到，具体地址为DrKLO/Telegram。你可以通过以下步骤获取和编译Telegram的源代码：
+
+下载源代码：从GitHub下载Telegram源代码： git clone https://github.com/DrKLO/Telegram.git
+
+配置编译环境：你需要Android Studio 3.4、Android NDK rev. 20和Android SDK 8.1。将你的release.keystore文件复制到TMessagesProj/config目录，并在gradle.properties文件中填写相关的密码信息。
+
+配置Firebase：访问Firebase控制台，创建两个Android应用程序，应用程序ID分别为org.telegram.messenger和org.telegram.messenger.beta，然后下载google-services.json文件并复制到TMessagesProj目录下。
+
+配置API ID和API Hash：登录my.telegram.org，申请api_id和api_hash，然后替换TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java文件中的APP_ID和APP_HASH字段。
+
+编译运行程序：在Android Studio中打开项目（注意是打开而不是导入），填写BuildVars.java中的变量值，然后编译运行Telegram。
+
+kitten tts
+pip install https://github.com/KittenML/KittenTTS/releases/download/0.1/kittentts-0.1.0-py3-none-any.whl
+
+```
+from kittentts import KittenTTS
+m = KittenTTS("KittenML/kitten-tts-nano-0.2")
+
+audio = m.generate("This high quality TTS model works without a GPU", voice='expr-voice-2-f' )
+
+# available_voices : [  'expr-voice-2-m', 'expr-voice-2-f', 'expr-voice-3-m', 'expr-voice-3-f',  'expr-voice-4-m', 'expr-voice-4-f', 'expr-voice-5-m', 'expr-voice-5-f' ]
+
+# Save the audio
+import soundfile as sf
+sf.write('output.wav', audio, 24000)
+```
+
+StackBlitz Bolt.new：AI+WebContainers的“全栈开发神器”
+StackBlitz Bolt.new将AI与WebContainers融合，八周实现2000万美元ARR增长。以“创建Markdown编辑的Next.js博客”为例，传统数小时流程被压缩至分钟级。
+
+3分钟开发全流程
+
+访问bolt.new加载WebContainers沙箱
+输入prompt生成代码
+自动npm install并启动服务器
+实时预览并一键部署至Netlify
+这种“即开即开发”体验消除环境差异，支持跨设备协作，团队成员可在平板等任何设备继续开发[19]。
+
+https://udlbook.github.io/udlbook/?ref=aihackr
+
+https://github.com/bravenewxyz/agent-c A ultra-lightweight AI agent written in C that communicates with OpenRouter API and executes shell commands.
+
+Naive UI Pro 发布！Vue3 开箱即用！
+𝙂𝙤𝙤𝙜𝙡𝙚 𝙋𝙞𝙭𝙚𝙡 10
+
+https://arxiv.org/abs/2401.03568 Agent AI: Surveying the Horizons of Multimodal Interaction 李飞飞
+
+WPF界面 vs MAUI界面
+⚠️ 避坑指南（血的教训）
+iOS闪屏卡启动页：Info.plist里必须声明启动图！
+Android权限无效：MainActivity.cs要动态申请！
+依赖注入报错：改用MauiProgram.cs注册服务
+
+rendergit：一键渲染 GitHub 仓库为静态网页的工具。该项目可以一键将 GitHub 仓库代码渲染为单页静态 HTML，提供便于阅读的 Human 模式，支持语法高亮、Markdown 渲染和侧边栏导航等功能。同时还支持 LLM 模式，方便将项目代码快速复制到 AI 工具作为上下文。
+
+Nuitka is the optimizing Python compiler written in Python that creates executables that run without a separate installer. Data files can both be included or put alongside.
+python -m pip install -U "https://github.com/Nuitka/Nuitka/archive/develop.zip"
+
+AI时代，是时候告别Django和Flask 拥抱FastAPI了！
+
+Framework Laptop 12 is a 12.2” convertible with stylus support. Designed for easy customization, upgrades, and repairs. https://frame.work/laptop12 模块化笔记本
+
+Framework Laptop 16 is an endlessly customizable laptop with upgradeable graphics, powered by NVIDIA® GeForce RTX™ 5070 and AMD's latest Ryzen™ AI 300 Series processors. https://github.com/FrameworkComputer/Framework-Laptop-16
+
+https://github.com/PixiEditor/PixiEditor
+PixiEditor 是一款基于 .NET 构建、开源（LGPL-3.0 license）、功能强大、通用的 2D 图形编辑器，旨在为您提供满足所有 2D 需求的工具和功能。为您的游戏、动画创建精美的精灵，编辑图片，设计标志。所有功能都集成在一个直观且熟悉的界面中。3种工具集
+- 像素艺术(Pixel art)：包含适用于像素级精确场景的工具。
+- 绘画(Painting)：基础绘画工具，柔软画笔，抗锯齿形状。
+- 矢量(Vector)：用于创建矢量的形状与路径。
+
+Q1：什么是智能体客户端协议ACP？
+
+A：ACP是谷歌与Zed Industries联合推出的标准化协议，用于AI智能体与集成开发环境的整合。它通过JSON-RPC over stdio进行通信，重用模型上下文协议规范，并提供TypeScript和Rust实现库。
+
+1、侪（chái）辈
+2、盥（guàn）洗
+3、觊觎（jì yú）
+4、痉（jìng）挛
+5、踟蹰（chí chú）
+6、傀（kuǐ）儡
+7、耒耜 (lěi sì)
+ 8、彘肩 (zhì jiān)
+9、囹圄 (líng yǔ)
+10、馄饨 (hún tun)
+11、绯闻 (fēi wén)
+12、嫉妒 (jí dù)
+13、潜力 (qián lì)
+14、惩罚 (chéng fá)
+15、勉强 (miǎn qiǎng)
+16、粗犷 (cū guǎng)
+17、压轴 (yā zhòu)
+18、蛤蜊 (gé  lí‌）
+19、皈 (guī）依
+20、诡谲 (guǐ jué）
+21、颔 (hàn）首
+22、沟壑（gōu hè）
+23、赧然（nǎn rán）
+24、饾饤（dòu dìng）
+25、乜斜（miē xie）
+
+32.4K星标一夜刷屏，开源数据库设计工具DrawDB
+
+C与C++头文件建议使用#pragma once替换 #ifndef XXX、#define XXX、#endif是C/C++头文件的保护“铁三角”机制
+
+Go开发者必备工具chromedp，基于Chrome DevTools协议实现高性能浏览器自动化，支持页面导航、元素交互、JS执行等核心功能，提供截图导出、反爬策略等高级特性
+
+https://github.com/dockur/windows 
+https://automatic-potato-wxgp6x7wjf5x6v.github.dev/
+
+So for a better experience you can connect using any Microsoft Remote Desktop client to the IP of the container, using the username Docker and password admin.
+
+There is a RDP client for Android available from the Play Store and one for iOS in the Apple Store. For Linux you can use FreeRDP and on Windows just type mstsc in the search box.
+
+How do I run macOS in a container?
+You can use dockur/macos for that. It shares many of the same features, except for the automatic installation.
+
+How do I run a Linux desktop in a container?
+You can use qemus/qemu in that case.
+
+
+1、媾和（gòu hé）
+2、痤 (cuó) 疮
+3、皈 (guīicon) 依
+4、龋 (qǔ) 齿
+5、鞭笞 (chī）
+6、针砭 (biān)
+7、莅 (lì) 临
+8、贿赂 (lù)
+9、木讷 (nè)
+10、伛偻 (yǔ lǚ)
+11、老妪 (yù)
+12、晕 (yùn) 车
+13、参与 (yù)
+14、熨 (yùn) 帖
+15、噱（xué）头
+16、咋（zé）舌
+17、殷（yān）红
+18、内讧（hòng）
+19、拓（tà）本
+20、豆萁（qí）
+21、整饬（chì）
+22、延宕（dàng）
+23、翌（yì）日
+24、肴馔（zhuàn）
+25、渣滓（zǐ）
+
+itch.io
+FCEUX（经典 NES/FC 模拟器）
+
+bun build ./cli.ts --compile --outfile mycli
+All imported files and packages are bundled into the executable, along with a copy of the Bun runtime. All built-in Bun and Node.js APIs are supported.
+When deploying to production, we recommend the following:
+
+bun build --compile --minify --sourcemap ./path/to/my/app.ts --outfile myapp
+You can also generate standalone executables using the Bun.build() JavaScript API.
+
+https://www.github-zh.com/top github排行榜TOP200
+
+对于母语是英语的人，Godot 的发音为 “GOD-oh”，其中 “t” 不发音。这个发音类似于法语原版的发音。
+具体来说，Godot 的英语音标为 /ˈɡɒdoʊ/。这种发音方式在戏剧《等待戈多》中也是如此。
+此外，Godot引擎的名称应该总是以标题的形式出现，并且应该只有一个大写字母，即 “Godot”
+
+## 2025-09-03
+### Build Git from source on Linux, Debian / Ubuntu
+Git requires the several dependencies to build on Linux. These are available via apt:
+
+1. From your shell, install the necessary dependencies using apt-get:
+
+$ sudo apt-get update
+$ sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev asciidoc xmlto docbook2x
+2. Clone the Git source (or if you don't yet have a version of Git installed, download and extract it):
+
+$ git clone https://git.kernel.org/pub/scm/git/git.git
+3. To build Git and install it under /usr, run make:
+
+$ make all doc info prefix=/usr
+$ sudo make install install-doc install-html install-info install-man prefix=/usr
+
+Jira是由澳洲Atlassian公司开发的一款流行的项目管理和缺陷跟踪工具，主要用于软件开发中的敏捷项目管理、问题跟踪和任务管理。它支持多种敏捷方法（如Scrum和看板），提供问题类型（如Story、Task、Bug、Epic）和强大的配置功能，并且可以根据团队需求进行定制化。Jira有云端（Cloud）和数据中心（Data Center）两种部署模式，并且有Jira Software、Jira Service Management等针对不同团队需求的产品。﻿
+
+ConEmu is an advanced console window where you can run any shell of your choice
+
+Flyoobe
+From bypassing hardware restrictions to giving you fine-tuned control over setup, Flyoobe makes installing and configuring Windows as fast, clean, and personal as it should be.
+
+Confluence是一个知识管理和团队协作工具，主要用于文档分享、讨论和知识积累。 它支持创建和管理各种类型的内容，包括会议记录、项目文档和企业wiki。 相比之下，Jira是一个项目管理和问题跟踪工具，专注于帮助团队高效地管理软件开发过程。 它支持敏捷开发、任务分配、进度跟踪和报告功能。
+
+https://nanobananaai.com/
+https://lmarena.ai/
+
+https://massgrave.dev/
+irm https://get.activated.win | iex
+
+gitea
+
+https://github.com/shiyu-coder/Kronos
+Kronos: A Foundation Model for the Language of Financial Markets
+
+根据 DistroWatch 的统计，目前活跃的 Linux 发行版有 300 多个，总数超过 1000 个！
+常见的有：
+Debian 家族：Debian、Ubuntu、Linux Mint
+Red Hat 家族：RHEL、CentOS、Fedora、Rocky Linux、AlmaLinux
+独立派：Arch Linux、Gentoo、Slackware、openSUSE
+面向安全的：Kali Linux、Parrot OS
+面向嵌入式的：Yocto、OpenWrt
+
+Tesla 几千美元的房子
+
+开源AI语音转写神器 Whispering：22MB 本地部署秒开
+https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
+
+
+曾经有人对稚晖君所具有的技能做了总结，他的技能包括：
+电子基础、电子元器件选型、电路原理图设计、高速电路 PCB 设计、电子元器件焊接技术、电路板调试、启动程序 UBOOT 裁剪移植、Linux 内核裁剪移植、文件系统、底层驱动程序（C语言、ARM 架构汇编、Linux 内核架构）、上层应用程序（C++、Qt、JAVA、Python等，深度学习，机器学习，OpenCV，神经网络，自然语言处理）、静态博客服务器搭建、高等数学、线性代数、概率论、离散数学、3D 建模、3D 打印、雕刻机、视频拍摄后期制作、防脱发技术等。
+
+这些技能中有哪些是我们作为嵌入式工程师必须掌握的？它们的学习路线又是怎样的？
+
+https://github.com/microsoft/rd-agent
+
+什么是 tzst？
+简单说，它就是 tar 归档 + Meta（Facebook）的 Zstandard 算法的组合，完美处理大文件和海量小文件！
+
+Vibe Coding（氛围编码）
+
+P2P File Transfer is a prototype of peer-to-peer file sharing system implemented in Go. It heps in large transfers between peers by dividing files into chunks, and using a central server for peer discovery and metadata management.
+
+`npm create vue@latest my-app --template vapor`
+
+Prompt-Optimizer: AI 提示词优化神器
+prompt.always200.com
+https://github.com/linshenkx/prompt-optimizer
+
+https://xianyu110.github.io/awesome-nano-banana/
+Awesome curated collection of images and prompts generated by gemini-2.5-flash-image (aka Nano Banana) state-of-the-art image generation and editing model. Explore AI generated visuals created with Gemini, showcasing Google’s advanced image generation capabilities.
+案例 91：谷歌地图变身古代藏宝图
+
+https://0bcd5baf6c08e24956.gradio.live/
+https://github.com/microsoft/VibeVoice Frontier Open-Source Text-to-Speech
+
+最近科技圈被一句话炸锅了：“现在的AI，在GroK4面前都是‘半成品’”。说这话的不是别人，正是马斯克。7月刚推出的GroK4，才半个月就把GPT-5、Claude 3这些“老大哥”比下去了—
+最近科技圈被一句话炸锅了：“现在的AI，在GroK4面前都是‘半成品’”。说这话的不是别人，正是马斯克。7月刚推出的GroK4，才半个月就把GPT-5、Claude 3这些“老大哥”比下去了
+
+ttps://github.com/abdullah-erturk/pmas
+PMAS - PowerShell Multi Activation System (TSF/HWID/OHOOK Activation)
+
+有的人喜欢Claude，有的人喜欢Gemini，还有的人更倾向于GPT-5/Codex，又或是Grok Code。
+评论区，一位网友问Karpathy有没有尝试过grok-code-fast-1？
+
+npm install -g @openai/codex 
+codex
+
+https://marketplace.visualstudio.com/items?itemName=openai.chatgpt
+
+标准	发布时间	主要特性
+C89	1989/1990	函数原型、标准库规范
+C99	1999	变长数组、单行注释、long long、灵活变量声明
+C11	2011	线程支持、类型泛型、静态断言
+C17	2018	C11 的缺陷修复
+C23	2023	nullptr、二进制常量、属性语法
+
+通过学习这些标准，你就能理解 C 语言程序在不同编译环境中的运行差异，进而根据项目需求选择合适的编译器选项（例如 -std=c99）。
+
+ai.studio/banana
+https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn#rest_1
+
+https://github.com/libuv/libuv
+libuv 是一个高性能、跨平台的异步 I/O 支持库，专为需要高效处理非阻塞 I/O 操作的 C/C++开发者设计。它最初为Node.js开发，用于提供事件驱动的异步 I/O 能力，如今已被广泛应用于 Luvit、Julia、uvloop 等多种项目。libuv 的核心目标是简化跨平台异步编程，提供统一的事件循环机制，屏蔽底层操作系统差异，让开发者专注于业务逻辑而无需深陷平台特定的 I/O 处理细节。无论是网络编程、文件操作还是多线程任务调度，libuv 都能提供高效、可靠的支持，特别适合需要高并发、低延迟的应用程序。
+libuv 是一个高性能、跨平台的异步 I/O 支持库，专为需要高效处理非阻塞 I/O 操作的 C/C++开发者设计。它最初为Node.js开发，用于提供事件驱动的异步 I/O 能力，如今已被广泛应用于 Luvit、Julia、uvloop 等多种项目。libuv 的核心目标是简化跨平台异步编程，提供统一的事件循环机制，屏蔽底层操作系统差异，让开发者专注于业务逻辑而无需深陷平台特定的 I/O 处理细节。无论是网络编程、文件操作还是多线程任务调度，libuv 都能提供高效、可靠的支持，特别适合需要高并发、低延迟的应用程序。
+
+寒武纪
+寒武纪成立于2016年，专注于人工智能芯片产品的研发与技术创新，
+致力于打造人工智能领域的核心处理器芯片，让机器更好地理解和服务人类。
+ 
+寒武纪提供云边端一体、软硬件协同、训练推理融合、具备统一生态的系列化智能芯片产品和平台化基础系统软件。寒武纪产品广泛应用于服务器厂商和产业公司，面向互联网、金融、交通、能源、电力和制造等领域的复杂 AI 应用场景提供充裕算力，推动人工智能赋能产业升级。
+陈云霁 陈天石兄弟👬
+Fellou.ai
+Agentic AI Browser for Deep Search …
+Deep action: Fellou independently plan and execute complex web and desktop based tasks across multiple apps to achieve your goals. Deep search: Fellou automates in-depth research across the entire internet, including logged-in accounts on pla…
+
+Pocket Flow: Codebase to Tutorial
+
+code2tutorial.com/
+
+BlogKeeper - 文捕 - 博客内容一键解析下载工具 https://blog-keeper.com/
+
+Google Docs 中使用markdown
+Google supports Markdown. Inside of a Google App, select Tools, then Preferences. Next, check the box beside “Automatically detect Markdown”
+
+https://marp.app/  The Marp ecosystem contains a rich toolset to assist your work. Marp for VS Code is an extension that allows you to edit and preview slide Markdown and custom theming within VS Code. Marp CLI is a command line tool allows you to convert Markdown with a simple CLI interface. ... and much more!
+
+C++的GUI框架
+1
+
+C++提供了多种GUI框架，适用于不同的开发需求，包括跨平台支持、Windows专用开发、游戏图形开发以及嵌入式系统开发。以下是一些常见的C++ GUI框架及其特点和适用场景：
+
+跨平台GUI框架
+
+Qt 是一个功能强大的跨平台框架，支持Windows、macOS、Linux、Android和iOS。它提供丰富的GUI组件、信号与槽机制以及多媒体、网络和数据库支持，适合需要跨平台支持的桌面应用开发。
+
+wxWidgets 是一个开源框架，支持Windows、macOS和Linux，提供原生外观和丰富的GUI组件，适合需要跨平台且保持原生外观的应用。
+
+FLTK 是一个轻量级的跨平台库，支持OpenGL，适合图形密集型应用或需要快速响应的轻量级应用。
+
+GTK+ 主要用于Linux桌面环境（如GNOME），也支持Windows和macOS，适合Linux桌面应用开发。
+
+Windows专用框架
+
+WinAPI 是微软提供的底层API，功能强大但学习曲线较陡，适合需要高度定制化的Windows应用。
+
+MFC 是基于WinAPI的C++类库，提供更高层次的抽象和丰富的GUI组件，适合快速开发Windows桌面应用。
+
+WTL 是一个轻量级的C++模板库，基于ATL，适合需要高效轻量的Windows应用。
+
+游戏和图形开发框架
+
+SFML 是一个跨平台库，提供图形、音频和网络模块，适合游戏和多媒体应用开发。
+
+SDL 是一个多媒体库，支持多种平台，适合图形密集型应用和游戏开发。
+
+OpenGL 是一个高性能图形API，适合开发需要2D/3D渲染的应用，如游戏和CAD软件。
+
+DirectX 是微软提供的API，专注于Windows平台的高性能图形和多媒体开发。
+
+嵌入式和低级开发框架
+
+Qt for Embedded 是Qt的嵌入式版本，支持嵌入式Linux和Windows Embedded，适合嵌入式系统的图形界面开发。
+
+EFL 是一个轻量级框架，主要用于嵌入式系统，适合需要高效运行的嵌入式应用。
+
+其他框架
+
+Dear ImGui 是一个即时模式的GUI库，轻量高效，适合嵌入式GUI和游戏开发。
+
+Ultimate++ 是一个跨平台框架，提供丰富的GUI组件，适合快速开发跨平台桌面应用。
+
+根据具体需求选择合适的框架，可以显著提高开发效率和应用性能。例如，跨平台开发推荐使用Qt或wxWidgets，而Windows专用开发可以选择MFC或WinAPI。对于游戏和图形开发，SFML和OpenGL是强大的工具，而嵌入式开发则可以考虑Qt for 
+
+https://h5login.qqchess.qq.com/
+
+中文名
+御名方守矢
+外文名
+Moriya Minakata
+别名
+御名
+性别
+男
+登场作品
+月华之剑士
+月华之剑士2
+拳皇wing
+
+御名方守矢，格斗游戏《月华剑士》及其衍生作品中的角色之一。
+
+御名方守矢，17岁就超越了师父的天才剑士，表面上冷酷无情，很少有人理解他那颗高傲孤独的心，其实，守矢一直在关心着他的师弟阿枫和师妹阿雪。他的象征之物是“满月”，浑身带满了金制饰物。
+
+拳皇97
+
+
+FLTK
+
+The Fast Light Tool Kit (FLTK) is a cross-platform C++ GUI toolkit for UNIX®/Linux® (X11 or Wayland), Microsoft® Windows®, and macOS®. FLTK provides modern GUI functionality without bloat and supports 3D graphics via OpenGL® and its built-in GLUT emulation. It was originally developed by Mr. Bill Spitzak and is currently maintained by a small group of developers across the world with a central repository on GitHub.  
+https://www.fltk.org/ https://github.com/fltk/fltk/
+
+https://gitlab.com/veloren/veloren
+Veloren is a multiplayer voxel RPG written in Rust. It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft.
+
+选型口诀：小团队轻量选Gitea，合规场景锁定Gitee，全功能协作用GitLab！
+B3. 手把手教你搭建：Gitea实战步骤
+用Gitea搭建服务器就像搭积木，3步完成，全程复制粘贴命令：
+B3.1 环境准备（10分钟）
+# Ubuntu系统一键安装依赖
+sudo apt update && sudo apt install -y git docker.io docker-compose
+sudo systemctl enable --now docker  # 启动Docker
+B3.2 安装Gitea（一行命令）
+docker run -d -p 3000:3000 -p 22:22 --name gitea -v /data/gitea:/data gitea/gitea:latest
+B3.3 初始化配置（3分钟）
+打开浏览器访问http://服务器IP:3000，按提示设置：
+数据库选SQLite（免配置）
+管理员密码用"大小写+数字+符号"
+仓库路径选/var/lib/gitea/repositories
+图片来源：CSDN博客安装教程
+成功标志：看到登录界面就搞定！默认管理员账号是admin。
+B4. 安全配置：6步筑牢防线
+B4.1SSH密钥登录（必做）
+# 本地生成密钥（按回车到底）
+ssh-keygen -t ed25519 -C "你的邮箱"
+# 复制公钥到服务器（替换IP）
+ssh-copy-id -p 22 git@服务器IP
+这样操作后，克隆代码不用输密码，还能防暴力破解！
+B4.2 2025年漏洞紧急修复
+⚠️高危漏洞CVE-2025-48384已被利用，立即执行：
+# 升级Git到安全版本
+sudo apt update && sudo apt install git -y
+# 验证版本（需≥2.43.7）
+git --version
+
+
+flowith.io 无限执行的AI智能体 Agent Neo
+https://www.codefather.cn/ 程序员 鱼皮
+
+https://github.com/TapXWorld/ChinaTextbook
+
+手心输入法 utools
+https://jimeng.jianying.com/ai-tool/home
+
+https://ftp.mozilla.org/pub/firefox/releases/143.0b9/win64/en-US/
+
+Feb 7, 2023 — IBM's first AI-optimized, cloud-native supercomputer, Vela. It has been online since May of 2022, housed within IBM Cloud, and is currently just for 
+
+Xiaomi Vela 是小米基于开源实时操作系统NuttX 打造的物联网嵌入式软件平台，Vela 在各种物联网硬件平台上提供统一的软件服务，支持丰富的组件和易用的框架，
+
+单文件执行与Shebang支持
+单文件脚本开发流程简化为：
+csharp 
+#!/usr/bin/dotnet run
+:package Newtonsoft.Json@13.0.3
+using Newtonsoft.Json;
+Console.WriteLine(JsonConvert.SerializeObject(new { name = "单文件执行" }));
+赋予执行权限后直接运行：chmod +x app.cs && ./app.cs，告别传统项目配置繁琐步骤。
+
+.NET的Blazor框架直接让C#开发者实现"前后端一把梭"——用C#写Web UI，编译为WebAssembly在浏览器运行，性能接近原生应用：
+•技术原理：Blazor组件直接编译为wasm，绕过JavaScript桥接，执行效率比React/Vue还高15%
+
+一键唤起系统分享面板，直达微信、微博、Telegram，需HTTPS。
+navigator.share?.({ title: '好文', url: location.href });
+
+B12. WritableStream
+逐块写入磁盘或网络，实时保存草稿、上传大文件更稳。
+const writer = stream.writable.getWriter();
+await writer.write(chunk);
+B13.Background Fetch
+PWA后台静默下载，断网恢复继续，课程视频提前缓存。
+await registration.backgroundFetch.fetch('video', ['/course.mp4']);
+B14.FileSystem Access
+读写本地真实文件，需用户授权，Web IDE即开即用。
+const [fh] = await showOpenFilePicker();
+editor.value = await (await fh.getFile()).text();
+B15.Clipboard
+异步读写剪贴板，无需第三方库，HTTPS环境安全复制。
+await navigator.clipboard.writeText('邀请码 9527');
+B16. URLSearchParams
+解析、修改、构造URL查询串，告别手写正则。
+const p = new URLSearchParams(location.search);
+p.set('page', 2);
+history.replaceState({}, '', `?${p}`);
+B17. structuredClone
+深拷贝对象、数组、Map、Date，循环引用也能完美复制。
+const copy = structuredClone(state)
+
+Windows超级管理器是一款绿色全能系统工具箱，软件大小仅为6.7MB却包含了数十种功能模块。
+Windows超级管理器 - 科利特尔软件网https://software.colithel.com/windows_super_manager
+
+这两年，shadcn/ui 可谓火到出圈，霸榜各种榜单。它的设计风格极简、体验极佳，Star 数一路飙升，成为React开发者的首选 UI 组件库。不少人已经把它当作“前端标配”。
+Now available: shadcn CLI 3.0 and MCP Server
+最近，一个叫 shadcn-ui-mcp-server 的开源项目又给它带来了新玩法：你可以让代码助手“读懂”这个组件库，帮你查组件、写示例，甚至生成整页布局。说白了，就是多了个懂 shadcn 的搭档，能和你一起“拼 UI”。
+Github：https://github.com/Jpisnice/shadcn-ui-mcp-server
+https://ui.shadcn.com/docs/components/chart
+
+智东西9月10日消息，今日上午，阿布扎比穆罕默德·本·扎耶德人工智能大学（MBZUAI）联合AI创企G42推出的新低成本推理模型K2 Think，相关论文已arXiv预印本平台发表，昨天下午模型在Hugging Face、GitHub上开源。
+智东西9月10日消息，今日上午，阿布扎比穆罕默德·本·扎耶德人工智能大学（MBZUAI）联合AI创企G42推出的新低成本推理模型K2 Think，相关论文已arXiv预印本平台发表，昨天下午模型在Hugging Face、GitHub上开源。
+K2 Think有320亿个参数，基于阿里巴巴的开源模型Qwen 2.5构建，性能超过参数规模是其20倍的OpenAI和DeepSeek旗舰推理模型。
+K2 Think有320亿个参数，基于阿里巴巴的开源模型Qwen 2.5构建，性能超过参数规模是其20倍的OpenAI和DeepSeek旗舰推理模型。
+在复杂数学任务基准测试中，研究人员计算了K2 Think在AIME24、AIME25、HMMT25和OMNI-Math-HARD中的平均得分，超过GPT-OSS、DeepSeek V3.1、Qwen3 235B-A22B等一众开源模型。
+在复杂数学任务基准测试中，研究人员计算了K2 Think在AIME24、AIME25、HMMT25和OMNI-Math-HARD中的平均得分，超过GPT-OSS、DeepSeek V3.1、Qwen3 235B-A22B等一众开源模型。
+K2 Think主页：
+https://www.k2think.ai/
+技术报告：
+https://arxiv.org/abs/2509.07604
+
+
+System.Text.Json作为.NET官方解决方案，已全面超越Newtonsoft.Json，成为JSON处理的首选工具。其零依赖特性、300%性能提升、持续的官方支持，使其成为现代.NET应用的必备技术。
+
+Google ai Veo2 可免费使用了
+
+Win11Debloat：优化系统流畅度！
+https://github.com/Raphire/Win11Debloat
+
+Warp, the intelligent terminal for developers
+https://www.warp.dev
+
+6️⃣AIX下载器 https://aixdownloader.com/zh
+​​一键获取网页上所有图片、视频、音频和文档！ AIX下载器让你轻松下载所需内容，完全免费。
+
+就今日(9月10号)，微软发布新一代宇宙第一IDE: Visual Studio 2026，当然是 Insiders（早期测试版）而非正式版。
+
+卡罗琳·莱维特（Karoline Leavitt），女，1997年8月出生于美国新罕布什尔州[2]，美国白宫新闻发言人[1]。
+
+bmp是什么格式
+
+将 PDF 文档转换为 Doc 或 Docx 格式的文件。
+完整代码示例如下：
+using Spire.Pdf;
+
+namespace ConvertPdfToFixedLayoutWord
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //创建PdfDocument对象
+            PdfDocument doc = new PdfDocument();
+
+            //加载PDF文档
+            doc.LoadFromFile("C:\\Users\\Administrator\\Desktop\\sample.pdf");
+
+            //将PDF转换为Doc格式并保存到指定路径
+            doc.SaveToFile("output/ToDoc.doc", FileFormat.DOC);
+
+            //将PDF转换为Docx格式并保存到指定路径
+            doc.SaveToFile("output/ToDocx.docx", FileFormat.DOCX);
+            doc.Close();
+        }
+    }
+
+如果您需要Spire.PDF for .NET的完整权限并希望解锁该产品的更多功能，可联系官方工作人员申请免费的30天临时许可证。
+
+ZHO-ZHO-ZHO
+/
+ZHO-nano-banana-Creation
+Public
+我的 nano-banana 创意玩法大合集！ 持续更新中！
+
+万里汇 蚂蚁集团
+
+🧰 常用的Vibe Coding工具 目前已有一些工具支持这种开发方式，例如：
+
+· Lovable：强调“零技术门槛”，适合产品经理等非技术人员快速验证想法。
+· v0 (by Vercel)：专注于快速生成现代、美观的前端界面。
+· Replit：在线编程环境，其AI代理能与你对话并理解项目类型。
+· Cursor：一款强大的AI编程助手，适合更深度的定制和调试。
+· Bolt.new：适合快速原型设计和MVP（最小可行产品）验证。
+
+GitHub - umami-software/umami: Umami is a modern, privacy-focused ...
+Umami is a simple, fast, privacy-focused alternative to Google Analytics. A detailed getting started guide can be found at umami.is/docs. A database. Umami
+https://eu.umami.is/share/LGazGOecbDtaIwDr/umami.is
+Umami Cloud a_boy@live.com
+```
+<script defer src="https://cloud.umami.is/script.js" data-website-id="6c271546-5c8e-40db-be7d-b2667d3d93de"></script>
+```
+
+罗罡是江西赣州宁都县固村镇人，效力于赣州市足球队，司职中场50号，曾效力苏州趣普仕、拉萨城投等俱乐部，百场经验成球队核心。
+
+个人背景：
+
+● 罗罡自幼随父母在广东梅州生活，在那里他接触并爱上了足球。
+
+● 小学三年级时开始踢足球，展现出了过人的天赋。
+
+职业生涯：
+
+● 曾效力于苏州趣普仕、拉萨城投、云南昆陆、上海汇龙和云南玉昆钢铁等职业俱乐部。
+
+● 积累了超过百场的职业比赛经验。
+
+在赣州市足球队的表现：
+
+● 在江西省城市足球超级联赛中，罗罡是球队的中场核心。
+
+● 前三轮比赛中全部首发出场，表现稳定。
+
+● 在对阵吉安队的比赛中，他在中场的组织和防守中发挥了重要作用。
+
+罗罡以其丰富的经验和稳定的表现，成为了赣州市足球队的重要一员。
+
+
+https://github.com/myshell-ai/MeloTTS/blob/main/docs/quick_use.md
+
+IT之家 9 月 11 日消息，微软昨天发布博客，宣布个人开发者现可免费在Microsoft Store发布应用，无需再缴纳此前的 19 美元（IT之家注：现汇率约合 135.3 元人民币）注册费，惠及学生、编程爱好者。
+
+
+芯片烧录程序的原理是将编译后的机器码程序和配置信息通过特定协议写入芯片内部的非易失性存储器，主要涉及物理基础、连接供电、通信协议、数据写入及验证等步骤。
+
+1. 物理基础：芯片程序通常存储在Flash存储器或OTP存储器中。Flash存储单元基于浮栅晶体管，通过在控制极施加高压使电子注入浮栅来改变阈值电压表示0或1，擦除时施加反向高压。OTP存储器使用熔丝或反熔丝，通过高压烧断熔丝或击穿绝缘层来表示0或1。
+
+2. 连接与供电：烧录器通过编程接口连接到芯片的专用引脚，提供稳定的编程电压。常用的编程接口包括ICSP、SWD、JTAG等。
+
+3. 通信协议：烧录器与芯片通过同步串行协议通信，如SPI、I²C或厂商私有协议。典型指令包括全片擦除、写入程序、校验和写配置字等。
+
+4. 数据写入流程：配置字是独立于程序存储区的特殊寄存器，控制芯片底层行为。某些存储器在写入前需要先擦除原有内容。
+
+5. 数据验证：烧录完成后，烧录器会读取存储器内容并与原始数据对比，以确保烧录成功。
+
+6. 保护与锁定：有些存储器支持写保护功能，可通过设置锁位防止内容被意外修改。
+
+烧录器在这个过程中起到协议转换器的作用，将PC端的信号转换为芯片能识别的编程协议信号。通过这些步骤，芯片烧录程序确保芯片能够按照预期运行。若需更详细的信息，建议查阅相关技术文档或专业书籍。
+
+
+ML.NET是微软推出的一个用于在.NET应用中进行机器学习的框架。它提供了简单易用的API，使得开发者可以轻松地训练和部署机器学习模型。
+
+雷鸟RayNeo Air 3s Pro智能AR眼镜 高清巨幕观影眼镜 柯南联名款 https://rayneo.cn/v3.html 雷鸟发布新一代AR眼镜X3Pro，首发定价8999元起，国家补贴后7649元。
+
+Arm 全新 Lumex CSS 平台 核心指标
+1、CPU-C1-Ultra：较 Cortex-X925性能、单线程均升25%，视频快15%，宽微架构提效
+2、CPU-C1-Pro：较 Cortex-A725 性能升12%，节能12%，优化Cortex A75
+3、CPU-SME2：C1 集群含 SME2，矩阵效率升 5 倍，Gemma 3B 推理等降延迟4.7 倍
+4、GPU-Mali G1-Ultra：首持移动下一代光追，性能升20%、能效升9%
+5、系统架构：SI L1优带宽延迟，SLC功耗降 71%，支持 MTE 保安全
+6、软件生态：获阿里、腾讯等采用
+
+OpenAI o3成绩直接飙到了47分（满分50分）
+人工智能数学奥林匹克（AIMO）创立于2023年，旨在推动开源AI模型在高阶数学推理的的发展。
+
+3.cn  jd.com 京东域名
+
+Google Labs
+https://labs.google
+Whisk - labs.google/fx
+A new experimental tool that lets you use images as prompts to visualize your ideas and tell your story.
+
+歡迎使用 Flow，這個 AI 電影製作工具能協助你輕鬆創作電影短片和場景，以連貫手法講述故事。這個平台專為創作者而生，也與創作者共同打造，並運用 Google 最先進的生成式模型。
+
+提示：如要獲得創作靈感並瞭解 Flow 出色功能，請造訪 Flow TV。
+
+网络热门4款AR眼镜的选购指南 （#Rokid Glasses，#INMO Air3，#雷鸟X3 Pro，#XREAL One Pro）
+
+https://www.pythonanywhere.com/pricing/
+Beginner: Free!
+A limited account with one web app at your-username.pythonanywhere.com, restricted outbound Internet access from your apps, low CPU/bandwidth, no IPython/Jupyter notebook support. 
+https://www.pythonanywhere.com/user/avvboy/files/home/avvboy
+
+optimus机器人 tesla pi phone
+
+IT之家 9 月 12 日消息，科技媒体 NeoWin 昨日（9 月 11 日）发布博文，报道称开发者 NTDEV 在github发布了全新脚本 nano11，可将原版 Windows 11 镜像体积压缩至约 2GB，并通过LZX压缩实现 2.8GB 装机空间，占用空间远低于原版近 20GB。它移除了Windows Update，因此用户无法为系统进行更新和维护。
+https://github.com/ntdevlabs/nano11
+
+科迪勒拉山系（Cordillera）是世界上最长的 褶皱山系，纵贯南北 美洲 大陆西部。 北起阿拉斯加，南到 火地岛，绵延约1.5万千米。 该山系的北美洲部分称为 落基山脉， 南 …
+
+阿拉斯加州（State of Alaska）位于北美大陆西北端，东与加拿大接壤，另三面环北冰洋、白令海和北太平洋。该州拥有全美20座最高山脉中的17座，6194米的德纳里山是北美最高峰。世界上大多数活动冰川在阿州境内，其中最大的马拉斯皮纳
+
+安第斯山脉（盖丘亚语：Andes；奇楚亚语：Antis），属于科迪勒拉山系，也称安第斯山脉或安蒂斯山脉，位于南美洲的西岸，全长约8900千米，宽约300千米，总面积在50万平方千米以上，是世界上最长的山脉。
+
+https://pine64.org/devices/
+
+深圳中学，中国中学的天花板！[赞][比心]
+
+NVIDIA年初就宣布了“Project Digits”，号称桌面AI超级计算机，或者叫迷你AI工作站，这也是NVIDIA的第一款桌面级PC。
+NVIDIA  DGX Spark基于自研的GB10超级芯片，台积电3nm工艺制造、2.5D封装技术，CPU部分有20个Armv9.2架构核心、两组共32MB三级缓存，GPU部分有6144个Blackwell架构的CUDA核心、24MB二级缓存，NVFP4格式算力1000 TOPS，然后还有14MB四级系统缓存。
+热设计功耗高达140W，256-bit位宽LPDDR5X-9400统一内存，DGX Base OS定制操作系统。
+NVIDIA宣称，搭配128GB内存，GB10可以运行最高2000亿参数的AI大模型，或者最高700亿参数的微调模型。
+两台DGX Spark可以通过ConnectX-7总线互连，大模型参数最高可达4050亿。
+
+垚读音【yáo】，形容山高，多用于人名。
+壵读音为【zhuàng】,古同「壮」。
+
+【新智元导读】刚刚，豆包·图像创作模型Seedream 4.0同时登顶「文生图」和「图像编辑」两项榜单！相比Nano Banana，Seedream 4.0在文生图的清晰度和美感上优势较为明显；在图像编辑上则难分伯仲，仅小幅领先。
+https://aigcarena.com/?scene=T2I
+
+shimmy     The 5MB Alternative to Ollama
+# Install from crates.io (Linux, macOS, Windows)
+cargo install shimmy
+
+# Or download pre-built binary (Windows only)
+curl -L https://github.com/Michael-A-Kuykendall/shimmy/releases/latest/download/shimmy.exe
+
+《Foundations ofLarge Language Models》PDF已经整理好，见评论区
+是由东北大学自然语言处理实验室的肖桐教授与朱靖波教授共同编写，是面向大语言模型领域的入门读物，适合希望掌握大模型基础知识的读者。
+改书是由东北大学自然语言处理实验室的肖桐教授与朱靖波教授共同编写，是面向大语言模型领域的入门读物，适合希望掌握大模型基础知识的读者。
+
+https://www.producthunt.com/shoutouts?ref=header_nav
+
+flowith https://flowith.io/blank
+https://www.k2think.ai/
+
+https://cobalt.tools/ 音视频下载
+
+实现实时搜索功能，传统JS需25行代码，而htmx仅需5行HTML：
+```
+<input type="text" id="search-input" 
+       hx-get="/search" 
+       hx-trigger="keyup delay:300ms changed" 
+       hx-target="#results">
+<div id="results"></div>
+```
+核心优势在于"后端逻辑即交互逻辑"：通过hx-post提交表单，Django视图处理后返回HTML片段，hx-target指定更新区域，实现无刷新体验。
+
+sim.ai Sim作为一个专注于AI工作流构建的开源平台
+https://elsaspeak.com/en/
+
+Autogen 是 Microsoft 推出的编程框架，旨在支持代理 AI 的开发。通过这个框架，开发人员可以轻松创建复杂的代理系统并进行智能交互。
+主要特点：
+支持创建自主或协作工作的多代理 AI 应用程序。
+框架支持 Python 和.NET，提供灵活的开发环境。
+提供 AutoGen Studio 和 AutoGen Bench，用于无代码 GUI 构建和代理性能评估。
+项目地址：
+https://github.com/microsoft/autogen
+
+motion vue 动画库
+
+https://github.com/cline/cline
+https://docs.cline.bot/getting-started/installing-cline
+
+https://github.com/codexu/note-gen  A cross-platform Markdown AI note-taking software. 
+
+indexedDB
+
+一行代码利用Fetch API的配置选项，明确告诉浏览器这是一个需要CORS支持的请求。mode: 'cors'指示浏览器发送带有CORS头部的请求，而credentials: 'include'则允许请求携带凭证信息（如cookies）。当然，服务器端仍需进行适当配置以响应这类请求：
+```
+const response = await fetch('https://api.example.com/data', { mode: 'cors', credentials: 'include' });
+```
+
+湖南省长沙市岳麓区银盆岭街道潇湘北路三段1250号图鸿大厦2607
+谢乐 李新林
+
+YISHION - 东莞市以纯集团有限公司
+yishion.com
+http://116.6.135.227/
+
+成立信息：湖南锦诺名品网络科技有限公司成立于2025年06月10日，位于湖南省长沙市，主要经营技术服务、互联网销售等业务。 
+商业模式：锦诺名品采用“名品平价”的策略，所有商品均为国内知名品牌，旨在通过源头供应链直供来降低价格，吸引消费者。 
+
+https://github.com/mermaid-js/mermaid-live-editor
+
+https://longcat.chat/ 美团ai
+ React Native， beeshell 2.0
+ https://tech.meituan.com/2019/09/26/open-source-react-native-component-library-beeshell.html
+ 
+2023年12月1日，美团旗下自营零售品牌“美团买菜”升级为全新品牌“小象超市”。
+“小象超市”坚持美团自营零售模式，通过在社区设立的集存储、分拣、配送为一体的便民服务站，为社区居民提供生鲜食杂日用及配送服务，定位为“30分钟快送超市”。
+▲美团买菜升级为“小象超市”，启用新品牌Logo。
+品牌升级后，小象超市丰富多彩的商品已经达到线下大型超市水平。目前，小象超市已在北京、上海、深圳、广州、武汉、苏州等多个城市上线。在美团“零售+科技”战略聚焦下，小象超市将通过更稳定、更便利、更丰富的商品零售，帮大家吃得更好，生活更好。
+
+https://huggingface.co/LLM360/K2-Think
+https://huggingface.co/meituan-longcat/LongCat-Flash-Chat
+
+滴滴青桔🍊＾ω＾
+https://m.bilibili.com/opus/904672369138729017 Windows11轻松设置（1.11版）
+https://www.osssr.com/17697.html
+https://github.com/Mercury13/unicodia
+
+https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/announcing-live-interpreter-api---now-in-public-preview/4453649
+
+AutoAgent is a Fully-Automated and highly Self-Developing framework that enables users to create and deploy LLM agents through Natural Language Alone.
+
+git clone https://github.com/HKUDS/AutoAgent.git
+cd AutoAgent
+pip install -e .
+
+WPS正在推出EXcel的Power Query功能（简介PQ）。
+
+
+Nuitka-GUI the Python 3 Binary machine code Compiler and Node Inspector 
+
+https://github.com/juancarlospaco/nuitka-gui
+
+https://github.com/ZuodaoTech/everyone-can-use-english
+https://enjoy.bot/courses/96acfb9c-f034-4e19-bfb5-b1c079f4095d
+青苔科技
+https://cdmosstech.com
+青苔科技
+成立于2022年的我们，是一家位于中国四川省成都市的创新型游戏开发公司。自成立以来，我们致力于打造独特、引人入胜的游戏体验，旨在通过创新的游戏设计和
+
+https://github.com/wenyuanw/quick-prompt
+Quick Prompt ✨ 提示词管理与快捷输入浏览器插件 | Browser extension for prompt management and quick input ✨ 
+
+前几天，Adobe设计布道师Howard Pinsky在推特上发布了一条看似轻描淡写的动态：
+“Nano Banana（Gemini 2.5 Flash Image）将在今年9月融入 Photoshop！”
+这条推文一经发布，立刻引爆了设计圈和 AI 圈的讨论。
+
+rizz是 Z 世代俚语，意思是“魅力”。因此，今年夏天，一个被称为“Rizzbot”的垃圾话机器人在互联
+
+https://github.com/The-Pocket/PocketFlow/tree/main/cookbook/pocketflow-chat
+
+Microsoft 的 pg 数据库插件 forvscode chat with this database
+
+爱编程的涵涵 嘉立创EDA
+
+SD Maid 2/SE is Android's most thorough cleaning tool. 
+
+Chatbox（https://chatboxai.app/）是由开发者@benn 开发的一个流行的大语言模型全平台聊天客户端。2025年1月28日
+Cherry Studio是一款功能强大的国产开源AI工具，支持本地部署、知识库管理、多模型聚合和联网搜索等特性。2025年3月2日
+
+深圳市纵维立方科技有限公司（以下简称：纵维立方）成立于2015年，如今公司已成为消费级3D打印机领域的领军企业之一。 2023年，纵维立方的年营收超过10亿元，且营收和利润均保持增长，成为少数几家达到十亿级规模的厂商之一。 经过多年的发展，纵维立方现已形成了两大产品品牌：Anycubic Kobra系列和Anycubic Photon系列。网页相关图像
+Anycubic Kobra S1 Combo 是一款出色的机器，其配置选项、功能特性，最重要的是价格，都使其成为无论是初学者还是有经验的 3D 打印用户的理想选择
+https://www.makeronline.com/zh/
+
+https://labs.google/lll/en/experiments/tiny-lesson
+
+8月28日，擅长编码且速度极快的Grok Code Fast 1发布。
+两周多后，主打速度的Grok 4 Fast也上线了。
+值得一提的是，Grok 4 Imagine在图像生成速度上，也是一把好手。
+
+i18n-cli
+
+TinyEditor
+一个基于 Quill 2.0 的富文本编辑器，在 Quill 基础上扩展了丰富的模块和格式，功能强大、开箱即用。
+https://github.com/opentiny/tiny-editor/tree/main/packages/projects
+https://github.com/slab/quill/
+https://quilljs.com/playground/snow
+
+你可以通过以下两种方法查看红米手机的进程：
+通过手机自带的应用程序管理功能查看
+打开手机的“设置”应用；
+导航到“应用程序”或“应用程序和通知”选项；
+查看列出的所有应用程序，找到正在运行的应用程序，它们通常会显示为“运行中”或“活动”。
+使用USB线连接手机和电脑，并通过adb命令进入手机查看
+使用USB线将手机与电脑连接；
+打开电脑上的命令提示符（cmd）或终端；
+导航到adb所在的文件夹；
+输入命令  adb shell  进入手机shell；
+输入  top -m 10 -s cpu  命令查看CPU占用情况；
+输入  dumpsys meminfo   查看特定应用的内存使用情况。
+综上所述，你可以根据自身需求选择合适的方法来查看红米手机的进程。
+
+https://juejin.cn/post/7549131152999383075  玩转Flex布局：看完这篇你也是布局高手！  
+
+https://github.com/topics/awesome
+https://github.com/awesomedata/awesome-public-datasets
+
+Git.io
+URL shortening service is no longer accepting new links.
+© 2025 GitHub Inc. All rights reserved. • Terms of Service • Privacy • Security
+
+https://golf-lang.com/examples.html
+
+https://juejin.cn/post/7535361978270433334
+由于Claude Code暂不支持大陆用户使用，需要使用**ClaudeYY**， 获取 API Key然后连接到镜像服务器：
+bash 体验AI代码助手 代码解读复制代码# 设置镜像服务器地址
+
+export ANTHROPIC_BASE_URL=https://www.claudeyy.com/api
+# 验证配置
+echo $ANTHROPIC_BASE_URL
+
+在启动的时候，执行claude -c，可以继续上次对话
+  执行claude -r，可以选择历史对话继续。如果你已经打开了某个对话，你也可以输入 /resume 来切换到其他会话
+  
+  https://graphique-design-lab.nocode.host
+  
+https://github.com/dyad-sh/dyad
+
+
+
+https://github.com/mlabonne/llm-course
+
+https://github.com/dbeaver/cloudbeaver
+https://demo.cloudbeaver.io/#/
+
+https://juejin.cn/post/7544924903046643753
+作为一个程序员，每天都在和各种登录机制打交道，但你真的搞清楚 Token、Session、Cookie、JWT、OAuth2 这五兄弟的关系了吗？
+
+用 requestAnimationFrame 分批丝滑渲染海量数据，如果你的数据量真的超级大（比如 10W+），即使分批渲染也会占用大量 DOM，这时可以考虑 虚拟滚动（只渲染可视区域内的元素）。
+核心思路：
+只渲染可见区域的数据，滚动时动态替换内容。
+使用 IntersectionObserver 或监听 scroll 事件计算可视范围。
+
+```
+// 老
+const xhr = new XMLHttpRequest();
+xhr.open('GET', '/api', false);   // 同步
+xhr.send();
+
+// 新
+const res = await fetch('/api');
+const data = await res.json();
+
+作者：404星球的猫
+链接：https://juejin.cn/post/7547207040532971559
+
+const ext = fileName.slice(fileName.lastIndexOf('.'));
+jQuery —— “百万网站”历史债
+现状：BuiltWith 统计全球 Top 1M 网站 78% 仍引用，但新立项使用率 < 6%（State of JS 2024）
+替代：
+
+DOM：querySelector + addEventListener
+Ajax：fetch
+动画：Web Animations API / CSS transition
+链式：可选链 ?. + 空值合并 ??
+
+```
+
+自动化邮件发送的终极秘籍：Python库smtplib与email的完整玩法
+
+https://link.juejin.cn/?target=https%3A%2F%2Fwww.indietools.work
+
+https://github.com/dataease/SQLBot
+
+https://github.com/tekaratzas/RustGPT
+
+https://github.com/EricLBuehler/mistral.rs
+
+https://marble.worldlabs.ai/
+
+https://github.com/eythaann/Seelen-UI
+The Fully Customizable Desktop Environment for Windows 10/11.Seelen UI requires the WebView runtime to be installed. On Windows 11, it comes pre-installed with the system. However, on Windows 10, the WebView runtime is included with the setup.exe installer. Seelen-UI 采用Rust + TypeScript + Tauri的组合，在性能、安全性与轻量化之间找到了完美平衡。
+
+https://github.com/GUI-for-Cores/GUI.for.Clash A GUI program developed by vue3 + wails.
+https://gui-for-cores.github.io/guide/gfc/how-to-use
+
+FlClash下载地址：https://github.com/chen08209/FlClash/releases
+FlClash使用教程：https://clash.download/flclash
+
+刚刚，谷歌和OpenAI同时拿下ICPC金牌，尤其OpenAI还是满分！
+ICPC全称国际大学生程序设计竞赛，是世界上最负盛名的编程竞赛之一！
+
+ICPC
+https://icpc.global
+ICPC Global
+The International Collegiate Programming Contest is an algorithmic programming contest for college students. Teams of three, representing their university, ...
+
+好的，这里有一份按照字母顺序排列的常见职业英文单词列表，并附上了中文翻译。
+
+为了方便您查阅，我将它们分成了几个大类。
+
+A - C
+
+· Accountant - 会计师
+· Actor / Actress - 男演员 / 女演员
+· Architect - 建筑师
+· Artist - 艺术家
+· Astronaut - 宇航员
+· Athlete - 运动员
+· Baker - 面包师
+· Banker - 银行家
+· Barber - 理发师（男性）
+· Bartender - 调酒师
+· Biologist - 生物学家
+· Builder - 建筑工人
+· Businessperson - 商人/企业家
+· Butcher - 肉贩
+· Carpenter - 木匠
+· Cashier - 收银员
+· Chef - 主厨
+· Chemist - 化学家；（英）药剂师
+· Cleaner - 清洁工
+· Clerk - 职员，办事员
+· Coach - 教练
+· Computer Programmer - 计算机程序员
+· Cook - 厨师
+· Counselor - 顾问，咨询师
+
+D - L
+
+· Dancer - 舞蹈家
+· Dentist - 牙医
+· Designer - 设计师
+· Detective - 侦探
+· Doctor - 医生
+· Driver - 司机
+· Economist - 经济学家
+· Editor - 编辑
+· Electrician - 电工
+· Engineer - 工程师
+· Farmer - 农民
+· Firefighter - 消防员
+· Fisherman - 渔民
+· Florist - 花商
+· Journalist - 记者
+· Judge - 法官
+· Lawyer - 律师
+· Librarian - 图书管理员
+· Lifeguard - 救生员
+
+M - R
+
+· Manager - 经理
+· Mechanic - 机械师
+· Model - 模特
+· Musician - 音乐家
+· Nurse - 护士
+· Nutritionist - 营养师
+· Officer - 官员，警察
+· Painter - 画家；油漆匠
+· Pharmacist - （美）药剂师
+· Photographer - 摄影师
+· Pilot - 飞行员
+· Plumber - 水管工
+· Police Officer - 警察
+· Politician - 政治家
+· Professor - 教授
+· Psychologist - 心理学家
+· Receptionist - 接待员
+· Reporter - 记者
+· Scientist - 科学家
+
+S - Z
+
+· Sailor - 水手
+· Salesperson - 销售员
+· Secretary - 秘书
+· Singer - 歌手
+· Soldier - 士兵
+· Surgeon - 外科医生
+· Teacher - 教师
+· Technician - 技术员
+· Translator - 翻译
+· Veterinarian - 兽医
+· Waiter / Waitress - 男服务员 / 女服务员
+· Writer - 作家
+
+几点说明：
+
+1. 以“-er/-or/-ist/-ian”结尾：许多职业名词由动词或名词加上这些后缀构成，例如：teach（教）→ teacher（教师），science（科学）→ scientist（科学家）。
+2. 性别中性化趋势：现代英语中，越来越多地使用性别中性的词汇。例如，用 Police Officer 代替 Policeman/Policewoman，用 Flight Attendant 代替 Steward/Stewardess，用 Actor 统称男女演员也变得很常见。
+3. 此列表仅为部分常见职业：世界上有成千上万种职业，这个列表只涵盖了一部分最常用和最常见的。
+
+希望这个列表对您有帮助！
+https://opal.withgoogle.com/landing/
+
+https://clash.download/flclash
+https://qiaomimi.cloud/#/dashboard ficlash免费试用，速度超快 Singapore
+
+蝉不懂禅，妄称知了；
+吏唯知利，怎言公仆？
+
+蝉不懂禅，妄称知了。
+猿未解缘，枉号悟空。
+
+TCL首发SQD-Mini LED技术打破色域十年僵局！
+
+专用版模型GPT-5-Codex，vscode插件https://openai.com/index/introducing-upgrades-to-codex/
+npm i -g @openai/codex 
+https://chatgpt.com/codex
+
+jdk 25 Features
+    470: 	PEM Encodings of Cryptographic Objects (Preview)
+    502: 	Stable Values (Preview)
+    503: 	Remove the 32-bit x86 Port
+    505: 	Structured Concurrency (Fifth Preview)
+    506: 	Scoped Values
+    507: 	Primitive Types in Patterns, instanceof, and switch (Third Preview)
+    508: 	Vector API (Tenth Incubator)
+    509: 	JFR CPU-Time Profiling (Experimental)
+    510: 	Key Derivation Function API
+    511: 	Module Import Declarations
+    512: 	Compact Source Files and Instance Main Methods
+    513: 	Flexible Constructor Bodies
+    514: 	Ahead-of-Time Command-Line Ergonomics
+    515: 	Ahead-of-Time Method Profiling
+    518: 	JFR Cooperative Sampling
+    519: 	Compact Object Headers
+    520: 	JFR Method Timing & Tracing
+    521: 	Generational Shenandoah
+
+Typer is a library for building CLI applications that users will love using and developers will love creating. Based on Python type hints.
+Documentation: https://typer.tiangolo.com
+Source Code: https://github.com/fastapi/typer
+Typer is FastAPI's little sibling, it's the FastAPI of CLIs.
+
+受够了黑白分明的终端输出吗？Rich 能让你的终端变得五彩斑斓。
+from rich import print
+
+user = {'name': 'omega', 'id': 'invalid'}
+# Rich 能漂亮地打印数据结构，还支持 emoji
+print(f":wave: Rich 打印\nuser: {user}")
+
+https://rich.readthedocs.io/en/stable/introduction.html#requirements
+
+Marimo：下一代 Python 交互式笔记本
+pip install marimo && marimo tutorial intro
+https://marimo.app/?slug=55kclj
+
+ServBay
+
+GraalVM不单单是个JDK，它是个高性能的多语言虚拟机。它最牛的地方在于能把Java代码直接编译成一个本地可执行文件，压根儿不需要JVM就能跑。
+javac HelloWorld.java
+
+native-image HelloWorld
+
+The last command generates an executable file named helloworld in the current working directory
+因此Java应用启动能快得像C++，内存占用能小得像Go。
+
+SQL Playground  sqlplayground.app/
+
+https://github.com/mit-han-lab/tinyml
+
+https://elementary.io/zh_CN/
+
+1. 体验与观察：安装系统，使用原生应用，阅读 HIG。
+2. 技术选型：了解 Vala、GTK、Meson、Flatpak 这个技术组合。
+3. 模仿与实践：按照官方指南，创建一个最简单的 elementary 风格应用。
+4. 深度源码分析：选择一个你感兴趣的原生应用，阅读其源码，理解其架构和实现细节。
+5. 参与贡献：提交 PR，融入社区，获得最直接的反馈。
+
+https://www.w10privacy.de/english-home/instructions-1/
+ CleanMem –内存释放利器
+Razer Cortex 是雷蛇出的一款免费游戏优化工具，它的核心功能就是在你玩游戏时，把其他不必要的后台进程都暂停掉，腾出更多资源给游戏本身。
+Driver Booster–驱动自动更新神器
+
+https://github.com/GUI-for-Cores/GUI.for.Clash
+A GUI program developed by vue3 + wails.
+
+Nuclear
+是一款开源免费的音乐流媒体播放器，能整合YouTube、SoundCloud等平台的免费音乐资源，支持跨平台（Windows/Mac/Linux）使用。它采用TypeScript和Rust开发，提供智能搜索、歌词显示、离线下载等功能，完全无广告且无需会员。最新版本可通过GitHub或包管理器（如Chocolatey/Brew）安装
+https://enjoy.bot/chapters/
+
+【新智元导读】DeepSeek-R1荣登Nature封面，成为史上首个经严格同行评议的大模型。年仅18岁的天才少年涂津豪作为作者之一，以实习生身份参与其中，他的故事从高中生到Nature作者，堪称励志传奇。
+
+微信和支付宝在7月20日和21日相继宣布全面开放绑定Visa、Mastercard等主流境外卡，并升级相关的服务。
+
+https://gemini.google.com/app/22726c00fb9c1437 
+
+https://github.com/ashishpatel26/500-AI-Agents-Projects
+
+OpenMind推出全球首个“AI原生”开源机器人系统OM1，该系统基于MIT协议在GitHub开源，致力于构建跨平台机器人开发统一框架。OM1支持四足、双足、人形及轮式等多种硬件，兼容AMD64与ARM64架构，原生适配宇树Unitree G1、Go2及优必选等机器人产品。通过集成SLAM、LiDAR与Nav2路径规划技术，该系统可实现复杂环境下的自主导航与行为仿真，并提供了基于React的OM1 Avatar交互界面，显著降低开发门槛与实验风险。
+
+jdk25新特性
+// 无需显式类声明
+void main() {
+    IO.println("Hello, JDK 25!"); // java.lang.IO 自动导入
+    String name = IO.readln("Enter your name: ");
+    IO.println("Hello, " + name);
+}
+
+import module java.base; // 导入模块的所有公共类
+// 可直接使用 List、ArrayList 等，无需单独导入
+
+uiverse
+Open-Source UI elements made with CSS or Tailwind
+
+中国移动eSIM预约页面上线，支持新入网、换卡、携号转网等业务
+
+https://github.com/SubtitleEdit/subtitleedit/releases
+
+https://github.com/puruvj/macos-web
+https://winxp.vercel.app/
+
+https://github.com/topics/web-os
+https://github.com/bytebot-ai/bytebot
+Bytebot is a self-hosted AI desktop agent that automates computer tasks through natural language commands, operating within a containerized Linux desktop environment.
+
+github.com/CodebuffAI/codebuff
+
+drawdb https://www.drawdb.app/editor
+https://csrankings.org/
+
+https://3d.hunyuan.tencent.com/
+访问官方文档：https://github.com/rough-stuff/rough
+在线演示：https://roughjs.com/demos/
+扩展库：rough-viz（图表）、rough-notation（标注）
+
+BillionMail gives you open-source MailServer,  email marketing — fully self-hosted, dev-friendly, and free from monthly fees. https://demo.billionmail.com/send 
+
+https://github.com/GrindGold/CppGuide?tab=readme-ov-file
+「C/C++学习+面试指南」一份涵盖大部分 C++ 程序员所需要掌握的知识。入门、进阶、深入、校招、社招，准备 C++ 学习& 面试，首选 CppGuide！
+
+TencentOS tiny的内核确实是非常非常小巧，最少资源占用为RAM 0.6KB，ROM 1.8 KB。这是他们团队自主研发的RTOS，源码非常简单易懂，源码作者以非常清晰的逻辑实现了整个内核。
+
+everything
+基础搜索：
+直接输入文件名或关键词（如 "document"）。
+支持通配符：*（任意字符）、?（单个字符）。示例："*.jpg" 搜索所有 JPG 图片，"file?.txt" 搜索 file1.txt、fileA.txt 等。
+布尔运算符：
+AND（默认）："word excel" 搜索同时包含 "word" 和 "excel" 的文件。
+OR："word | excel" 搜索包含任一关键词的文件。
+NOT："word !excel" 搜索包含 "word" 但不含 "excel" 的文件。
+路径与属性过滤：
+"path:C:\Users\"：限定搜索路径。
+"ext:pdf"：按扩展名过滤（如 PDF、MP4）。
+"dm:2023-01-01"：按修改日期过滤（dm= 修改日期，dc= 创建日期）。
+"size:>10MB"：按文件大小过滤（支持 KB、MB、GB）。
+
+上海交大大模型教程
+
+zread.ai
+
+https://gist.github.com/dekomote/4069446
+
+https://labs.google.com/mixboard/welcome
+
+容器运行时的格局也在悄然生变。containerd 和 runc 成为了 Kubernetes 官方推荐的运行时，它们更轻、更专注，
+
+https://github.com/mcp/github/github-mcp-server
+
+https://developer.chrome.com/blog/chrome-devtools-mcp?hl=zh-cn
+
+https://lynx.invisible-island.net/lynx_help/Lynx_users_guide.html
+
+头条搜  夏思凝美图分享
+
+https://www.vue-plugins.org/
+
+Durable.co — 30秒网站生成器
+GitHub：github.com/hydropix/TranslateBookWithLLM
+
+1. 设计目标：MQTT为物联网设备通信优化，WebSocket用于浏览器与服务器通信。
+2. 通信模型：MQTT是发布/订阅模式，WebSocket是直接的客户端-服务器模式。
+3. 应用场景：MQTT适用于物联网设备与云平台，WebSocket适用于实时Web应用。
+4. 协议特性：MQTT轻量、支持QoS，WebSocket实时性强、易于实现。
+https://presenton.ai/outline
+
+德国四人组“重新定义Git”，靠图形化客户端年入10亿元！
+​fournova团队因受够命令行Git的晦涩难用，开发出图形化工具Tower——将rebase、cherry-pick等复杂操作转化为拖拽点击，全球超300万开发者付费使用，年收入破10亿元！
+
+visual web editor for professionals
+Pinegrow lets you work faster with HTML, CSS, SASS, Bootstrap, Tailwind CSS, GSAP Interactions, WordPress and WooCommerce.
+
+Pinegrow is available as a desktop app, as an online service and as a self-hosted WordPress plugin.
+
+Adobe 软件的最佳替代品 原文在这里
+Evince (Adobe Acrobat Reader) 一个“支持多种文档格式的文档查看器”，可以查看 PDF，还支持各种漫画书格式
+Pixlr (Adobe Photoshop) 一个强大的图像编辑工具
+Inkscape (Adobe Illustrator) 一个专业的矢量图形编辑器
+Pinegrow Web Editor (Adobe Dreamweaver) 一个可视化编辑制作 HTML 网站
+Scribus (Adobe InDesign) 一个开源电子杂志制作软件
+Webflow (Adobe Muse) 一款可以帮助用户不用编码就可以快速创建网站的谷歌浏览器插件。
+Tupi (Adobe Animate) 一款可以创建 HTML5 动画的工具。
+Black Magic Fusion (Adobe After Effects) 一款先进的合成软件，广泛应用于视觉特效、广电影视设计以及 3D 动画设计等领域。
+
+$* 或 $@	除了 $0 外的所有位置参数
+$#	不包括 $0 在内的位置参数的个数
+$#	返回参数个数
+$*	返回所有参数
+$$	脚本运行的当前进程 ID 号
+$!	后台运行的最后一个进程的 ID 号
+$@	返回所有参数（与 $* 相同）
+$-	返回 Shell 使用的当前选项，与 set 命令功能相同。
+$?	函数返回值（或上一个命令的退出状态）
+
+如果希望执行某个命令，但又不希望在屏幕上显示输出结果，那么可以将输出重定向到 /dev/null：
+如果希望屏蔽 stdout 和 stderr，可以这样写：
+$ command > /dev/null 2>&1
+
+Any2Text：免费转换音频和视频为文本的AI工具
+
+https://sindresorhus.com/hyperduck
+
+Windows 11正在推出一项名为“Windows AI Labs”的新计划，旨在让用户提前体验微软的AI功能。
+
+高通骁龙峰会今日正式开幕，新一代旗舰芯片骁龙8 Elite Gen 5终于揭开面纱，性能数据直接让整个安卓圈集体破防”！这颗芯片采用台积电3nm工艺，CPU设计彻底放飞”——2颗4.61GHz超大核+6颗3.63GHz大核，全大核架构堪称性能核弹”，多核性能暴增50%。
+
+git clone https://github.com/opactorai/Claudable.git
+cd Claudable
+
+# 2. 安装依赖（自动配置环境）
+npm install
+
+# 3. 启动开发服务器
+npm run dev
+
+虚拟机网络配置
+桥接模式：将虚拟机桥接到物理机的网卡，需要与物理机在同一网段，适合需要与局域网内其他设备通信的场景。
+2
+NAT模式：虚拟机通过宿主机的NAT功能访问网络，适合需要访问外部网络但不需要被局域网内其他设备直接访问的场景。
+2
+主机模式：虚拟机与宿主机通信，与外部网络隔离，适合内部测试和开发。
+2
+
+使用nmcli命令连接Wi-Fi
+登录Linux系统。
+使用nmcli命令扫描周围的WiFi热点：nmcli device wifi list。
+连接到指定的WiFi热点：nmcli device wifi connect <wifi name> password <wifi passwd>。
+使用ip addr show wlan0查看WiFi的IP地址。
+使用ping命令测试网络连通性。
+
+https://cr.console.aliyun.com/
+
+code --add-mcp '{"name":"chrome-devtools","command":"npx","args":["chrome-devtools-mcp@latest"]}'
+
+gemini mcp add -s user chrome-devtools npx chrome-devtools-mcp@latest
+
+npm install -g @iflow-ai/iflow-cli
+https://github.com/Snawoot/nth-dump/releases/tag/v1.5.0
+
+https://ifconfig.co/ ifconfig.me ipinfo.io
+
+maji 水 muzuli sawa好👌
+
+1).woo码物语编程语言是为广大[码人]创建的一款不用编译的动态解释型脚本语言，一个解释器，安装及其简单。 2).编码方式类似php，很多全局函数;例如:_json_encode({1,2}),不同的是全局函数前面都有下划线，一是防止和用户局部变量重名，二是用编辑器使用更加方便，输入下划线就弹出所有全局函数，方便输入 查找。 3).woo语言是多线程模式的，相对与php的多进程模式占用内存更小，且支持多线程，使用_run('file.woo',params...)来开启一个线程。 4).woo语言的包管理器是wpm（code wooyri package mamager）和python的pip，php的conposer一个用途，wpm install oshine/bitmap即可安装对于的包和插件。 5.)语法兼容lua脚本90%,会简单的lua脚本就可以编写。 6.)面试go程序员的时候，应该被问到chan（通道），装逼必须得了解的，当然了，woo语言也集成了这类装B的功能：
+
+-- test.woo中的内容为:
+_chan_put(false,{1,2,3,4,5,6,_ARGS[1]})
+
+-- main.woo中的内容为:
+_run('test.woo', "线程1")
+_out('主线程loop，取线程提交值', _chan_get(true), "\n") 
+
+-- 执行:woo main.woo
+7.)集成了许多好用的库（开源）
+
+woo_proxy | sockets5代理 （下面的在开发中。。。） Murphy web框架 英文翻译库 还有更多不一一列举... 开发插件不限制语言，官方提供了插件开发的go语言库：插件开发库，当然了其他语言也可以开发woo插件，和插件通信使用udp和tcp均可
+
+8.)支持sockets（udp/tcp）/websockets/http服务
+
+https://lite-xl.com/playground/
+
+Notepad4 (Notepad2⨯2, Notepad2++) is a light-weight Scintilla based text editor for Windows with syntax highlighting, code folding, auto-completion and API list for many programming languages and documents, it's based on (rewritten in modern C++) Florian's Notepad2 and XhmikosR's Notepad2-mod. matepath is a file browser plugin and based on (rewritten in modern C++) Florian's metapath.
+
+https://www.wolfram.com/wolframscript/
+WolframScript 让 Wolfram 语言代码可以在任何终端运行，无需依赖系统中是否拥有 Wolfram 内核。 
+例
+
+在本地 Wolfram 引擎计算 Wolfram 语言代码 2+2：
+
+$ wolframscript -code 2+2
+            4
+
+在 Wolfram Cloud 计算 Wolfram 语言代码 2+2：
+
+$ wolframscript -cloud -code 2+2
+            4
+
+脚本文件
+
+创建文件，以便在本地执行 Wolfram 语言代码：
+file.wls
+
+#!/usr/bin/env wolframscript
+            Print[2+2]
+
+$ ./file.wls
+            4
+
+创建文件，以便在 Wolfram Cloud 上执行 Wolfram 语言代码：
+file.wls
+
+#!/usr/bin/env wolframscript -cloud
+                Print[2+2]
+
+$ ./file.wls
+            4
+
+创建使用命令行参数的文件：
+file.wls
+
+#!/usr/bin/env wolframscript
+                 Print[ToExpression[$ScriptCommandLine[[2]]]^2]
+
+$ ./file.wls 5
+            25
+
+创建给出一个函数的文件，其参数来自命令行：
+file.wls
+
+#!/usr/bin/env wolframscript -function -signature City City
+                Print[GeoDistance[#1, #2]]&
+
+$ ./file.wls "Champaign, IL" "Oxford, England"
+            Quantity[4010.4812837526256, Miles]
+            
+https://resources.wolframcloud.com/PromptRepository/
+https://resources.wolframcloud.com/FunctionRepository
+
+https://www.oceanengine.com/ 
+ec2-13-213-4-54.ap-southeast-1.compute.amazonaws.com
+
+https://github.com/WolframResearch/vscode-wolfram
+
+安卓 访问官方内测入口：https://wj.toutiao.com/q/366529/8g9c9q6D/#/，填写问卷获取资格后下载安装包 需完成问卷验证，部分机型可能不兼容
+
+OpenAI Sora 2 与 Google Veo 3 的主要区别是什么？
+Sora 2 强调物理真实感与音视频同步，让人物、物体和场景的表现更自然，并配以电影级的音效。相比之下，Google Veo 3 更注重画面质感和精准的口型同步，但生成的视频片段更短。
+
+虽然年仅18岁，但特朗普的长孙女 凯·特朗普（Kai Trump）已经成为特朗普家族第三代中的代表人物。她是职业高尔夫球手，开创了自己的品牌，坐拥数百万粉丝，还开始在政坛崭露头角。那么，这个女孩会不会成为特朗普的继承人呢？
+
+凯·特朗普 2007年5月12日出生在纽约市，是小唐纳德·特朗普（Donald Trump Jr.）与前妻凡妮莎·海登·特朗普（Vanessa Haydon Trump）的第一个孩子。
+但伊万卡的女儿， 阿拉贝拉·库什纳（Arabella Kushner）已成为第三代中的另一位潜力股。
+
+Poe.com 最好的人工智能，尽在一处。访问 ChatGPT、Claude 3.5 Sonnet、Gemini、一流的图像、视频和音频生成模型，以及数百万个用户创建的机器人。
+
+https://github.com/mco2004/qwen-tts
+
+Excel解释 transformer
+
+https://motionbgs.com/gaze-of-the-blade
+Live Wallpaper for PC: Windows 11/10/7 & Mac
+4K Download (21.5Mb)
+3840x2160 mp4 video file
+
+GitHub - winfunc/opcode: A powerful GUI app and Toolkit for Claude Code ...
+🌟 Overview opcode is a powerful desktop application that transforms how you interact with Claude Code. Built with Tauri 2, it provides a beautiful GUI for …
+
+mdserve是一个使用 Rust 开发的 Markdown 预览服务器，他只有一个可以执行文件，不需要额外的依赖。
+
+单一可执行文件，无需额外依赖
+
+通过 WebSocket 通信机制实现实时预览
+
+内置主题选择器
+
+GFM 和 Mermaid 图表支持
+
+daisyUI adds a set of customizable color names to Tailwind CSS and these new colors use CSS variables for the values. 
+
+24岁的Carina Hong称作一个「推动数学超级智能的人」。
+创立Axiom Math并担任CEO，Axiom Math核心员工中大多数来自Meta
+
+重命名默认分支： git branch -M main
+
+全球支付要变天了：PayPal 联手微信支付，加密支付全面接入
+PayPal 正式宣布推出 PayPal World，携手 微信支付、印度 UPI、拉美 Mercado Pago，实现跨境钱包互联。
+以后老外来中国旅游，用 PayPal 扫微信二维码就能付钱；
+国人出国，也能直接用微信扫 PayPal 的二维码，真正做到“跨境支付=本地支付”。首批合作预计在今年秋季上线。
+更值得注意的是，PayPal 已经把 加密支付 纳入主流：
+
+https://github.com/dduan/tre
+
+https://md.doocs.org/
+
+Remove-Item（别名：rm, del）删除文件或目录：
+# 删除文件
+Remove-Item "file.txt"
+
+# 强制删除目录及其内容
+Remove-Item "C:\temp" -Recurse -Force
+
+# 使用量排序
+Get-Process | Sort-Object WorkingSet -Descending
+
+# 获取占用CPU最多的进程
+Get-Process | Sort-Object CPU -Descending | Select-Object -First 10
+
+# 以管理员权限启动PowerShell
+Start-Process powershell -Verb RunAs
+
+# 获取正在运行的服务
+Get-Service | Where-Object {$_.Status -eq "Running"}
+
+Start-Service -Name Spooler
+Stop-Service -Name Spooler
+Restart-Service -Name Spooler
+
+Get-ComputerInfo
+
+Get-WmiObject用来获取WMI信息，这个功能超级强大：
+# 获取系统信息
+Get-WmiObject -Class Win32_ComputerSystem
+
+# 获取CPU信息
+Get-WmiObject -Class Win32_Processor
+
+# 获取内存信息
+Get-WmiObject -Class Win32_PhysicalMemory
+
+# 获取磁盘信息
+Get-WmiObject -Class Win32_LogicalDisk
+
+Select-String（类似grep，这个很重要）在文本中搜索：
+# 在文件中搜索文本
+Select-String -Path "*.log" -Pattern "error"
+
+# 搜索多个文件
+Get-ChildItem *.txt | Select-String "keyword"
+
+Where-Object（别名：where, ?）用来过滤对象：
+# 获取大于100MB的文件
+Get-ChildItem | Where-Object {$_.Length -gt 100MB}
+
+# 获取最近7天修改的文件
+Get-ChildItem | Where-Object {$_.LastWriteTime -gt (Get-Date).AddDays(-7)}
+
+#查看端口是否被占用
+netstat -ano|findstr :80
+
+场景一：批量重命名文件
+假设你要把一个目录下所有的.txt文件重命名为.bak文件。
+CMD的做法：
+for %f in(*.txt) do ren "%f" "%~nf.bak"
+PowerShell的做法：
+Get-ChildItem *.txt | Rename-Item -NewName {$_.Name -replace '\.txt$','.bak'}
+PowerShell的版本更直观，而且支持正则表达式，处理复杂的重命名规则更方便。
+
+场景四：批量管理服务器
+这是PowerShell最强大的功能之一。假设你需要在多台服务器上执行相同的操作：
+# 定义服务器列表
+$servers = "Server01", "Server02", "Server03"
+
+# 批量获取服务器信息
+Invoke-Command -ComputerName $servers -ScriptBlock {
+Get-WmiObject -Class Win32_LogicalDisk |
+Where-Object {$_.DriveType -eq 3} |
+Select-Object DeviceID, Size, FreeSpace
+}
+
+# 批量重启服务
+Invoke-Command -ComputerName $servers -ScriptBlock {
+Restart-Service -Name Spooler
+}
+
+# 将结果保存到文件
+Get-Process | Export-Csv "processes.csv"
+
+# 将结果转换为HTML
+Get-Service | ConvertTo-Html | Out-File "services.html"
+
+问题1：脚本执行被阻止
+这是最常见的问题，解决方法是修改执行策略：
+# 临时允许执行脚本
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+# 永久修改（需要管理员权限）
+Set-ExecutionPolicy RemoteSigned
+
+问题2：中文乱码
+有时候PowerShell显示中文会出现乱码，可以这样解决：
+# 设置控制台编码
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+# 或者在脚本开头添加
+$OutputEncoding = [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+问题3：远程连接失败
+使用PowerShell远程管理时可能遇到连接问题：
+# 启用PowerShell远程管理
+Enable-PSRemoting -Force
+
+# 添加信任的主机
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "192.168.1.*"
+
+# 测试远程连接
+Test-WSMan -ComputerName "RemoteServer"
+问题4：内存占用过高
+PowerShell有时会占用较多内存，特别是处理大量数据时：
+# 强制垃圾回收
+[System.GC]::Collect
+
+# 使用流式处理代替一次性加载
+Get-Content "largefile.txt" -ReadCount 1000 | ForEach-Object {
+# 处理每1000行
+}
+
+https://learn.microsoft.com/zh-cn/powershell/
+在线教程
+PowerShell Gallery有很多实用的脚本和模块，可以学习别人的代码。
+地址：https://www.powershellgallery.com/
+
+
+Python一行代码解决方案：
+```
+import pandas as pd
+# 一行代码合并多个相同结构的Excel文件
+combined_df = pd.concat([pd.read_excel(f)forfin['销售部.xlsx', '市场部.xlsx', '财务部.xlsx']])
+
+#进阶用法（带自动文件检测）：
+import glob
+
+# 自动读取文件夹内所有Excel文件并合并
+all_data = pd.concat([pd.read_excel(f) for f in glob.glob('月度报表/*.xlsx')])
+```
+
+
+​git reset -hard HEAD~1  撤销最近的提交
+git reset  取消暂存的修改
+git checkout - [file-path]   丟弃工作目录中的修改
+​git merge [branch-name]   合并指定的分支到当前分支
+git rebase [branch-name]   把当前分支的修改基于指定分支重新应用(变基）
+git tag [tag-name]  在当前提交上创建一个tag标签
+
+高德扫街榜
+
+https://github.com/fathyb/carbonyl
+ 是由 Fathy Boundjadj 用 Rust 语言开发的终端浏览器。它基于 Chromium，支持几乎所有的 Web API，包括 WebGL、WebGPU、音频和视频播放、动画等。
+ 
+找到了一个开源免费的 BT 种子下载客户端：PikaTorrent。
+​提供简洁易用的下载管理界面，并且支持边下载边播放视频，最重要是全平台支持。
+​GitHub：github-com/G-Ray/pikatorrent
+https://github.com/eclaire-labs/eclaire
+Local-first, open-source AI assistant for your data — unify tasks, notes, docs, photos, and bookmarks. Private, self-hosted, and extensible via APIs.
+
+netplwiz 打开微软官方的用户管理工具。取消密码要求。
+：计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+3. 在右边一大堆值里面，找到这三个宝贝：
+AutoAdminLogon：双击它，把数值数据从0改成1。
+DefaultUserName：双击它，确认数值数据就是你的用户名。
+DefaultPassword：如果这个项不存在，你就右键空白处 -> 新建 -> 字符串值，然后把它命名为 DefaultPassword。双击它，在数值数据里填上你的开机密码。
+做完这些，关闭注册表编辑器，重启电脑同样生效。
+
+https://github.com/asweigart/pyautogui
+
+https://openwrite.cn/
+
+https://github.com/OpenListTeam/OpenList
+
+链接: https://pan.baidu.com/s/1SGP_CsPOg_LIGXXOy9iMcg 提取码: yh26 复制这段内容后打开百度网盘手机App，操作更方便哦
+
+https://tresjs.org/
+marimo
+
+IT之家 10 月 4 日消息， 当地时间本月 2 日正式发布了 ZGX Nano G1n AI Station。这款三维 150×150×51 (mm) 的超紧凑桌面工作站专为 AI 开发而构建，配备了 FP4 稀疏 AI 算力达 1 pTOPS  GB10 Grace Blackwell 超级芯片。
+ZGX Nano G1n 板载 128GB LPDDR5x 统一内存，拥有 273GB/s 的内存带宽，配备 1TB 或 4TB 容量的 TCG Opal 加密 M.2 NVMe 固态硬盘。
+
+wxWidgets/Phoenix
+0xJacky/nginx-ui
+
+https://froala.com/wysiwyg-editor/demo/
+
+微软即将推出含广告的免费Xbox云游戏服务
+
+https://github.com/craigbarnes/dte
+A small, configurable terminal text editor 
+
+微软CTO称将启动自研芯片
+https://github.com/simular-ai/Agent-S
+
+https://fmhy.net/ https://fmhy.net/ai
+
+https://www.text-to-speech.online/ 我们使用强大的微软 AI 语音库来合成接近真人声音的独特阅读音频。
+
+copyweb.ai
+
+Vert.x-Web is a set of building blocks for building web applications with Vert.x. Think of it as a Swiss Army Knife for building modern, scalable, web apps.
+Vert.x是一个基于Java的开源框架，用于构建异步、响应式的应用程序，它在某些方面有着独特的优势，但相对来说没有特别“火”，主要原因包括学习曲线较陡、生态系统规模有限、应用场景相对特定，以及社区活跃度问题。
+
+谷歌加入CUA战场，发布Gemini 2.5 Computer Use：AI直接操作浏览器
+PythonAnywhere is a server-side, no-gui sort of environment, so we currently don't support any sort of graphics (unless you count web apps). So things like turtle and pygame are out. Which is a shame because graphics are so great, particularly for the student's first few experiences with programming. You may want to check out https://trinket.io as an alternative for the first few classes.
+
+https://chat.openai.com/cdn-cgi/trace
+
+https://googlechromeai2025.devpost.com/ Google Chrome Built-in AI Challenge 2025
+
+https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.4.1.0    A C# port of shadowsocks
+
+go.dev  https://pkg.go.dev/net/http
+To run the tour locally, you'll need to first install Go and then run:
+    go install golang.org/x/website/tour@latest
+    
+This will place a tour binary in your GOPATH's bin directory. When you run the tour program, it will open a web browser displaying your local version of the tour.
+
+coleifer/sqlite-web
+Web-based SQLite database browser written in Python
+
+https://github.com/SagerNet/sing-geosite/releases/download/20250916122507/geosite.db
+
+Console Importer｜通过控制台快速引入第三方库
+chromewebstore.google.com/detail/cons…
+我们只需要在控制台中输入$i('dayjs')，然后再输入 dayjs 的方法即可。
+
+UI 组件库：像 shadcn/ui、daisyUI、flowbite 等，几乎全是基于 tailwindcss 打造。
+框架模版：Next.js、Nuxt、Remix、Astro 的官方或社区 starter 里，大多数开箱即配好 tailwindcss。
+文档和教程：tailwindcss 的学习资料、视频课程、最佳实践文章，数量远超 unocss。
+
+https://edgeone.ai/zh/register?s_url=https://console.tencentcloud.com/edgeone/pages
+
+linux内核代码阅读工具总结：
+１、vi+ctags
+2、sourceinsight
+3、lxr（在线）
+4、eclipse
+5、vscode
+
+https://www.figure.ai/ The future of home help is here
+Figure 03 is a general purpose humanoid robot for every day.
+
+https://github.com/CapSoftware/Cap
+Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share securely in seconds with custom S3 bucket support. Connect your own domain.
+
+正在努力扭转艰难处境的老牌芯片厂英特尔，周四展示了即将亮相的新一代先进制程PC芯片，开始向苹果、高通、AMD、台积电等竞品发起反击。
+公司发布的照片显示，今年3月履新的CEO陈立武站在亚利桑那工厂门口，捧着一块代号为Panther Lake的新一代酷睿处理器晶圆。这是首款采用英特尔18A工艺（18埃米，即1.8纳米）的芯片。
+
+https://github.com/GrapesJS/grapesjs
+用GrapesJS非常简单，只需几行代码就能创建一个基础编辑器：
+<div id="gjs"></div>
+
+<script type="text/javascript">
+  var editor = grapesjs.init({
+    container: '#gjs',
+    components: '<div class="txt-red">Hello world!</div>',
+    style: '.txt-red{color: red}',
+  });
+</script>
+
+
+惠普Z2 Mini G1a迷你工作站在京东上架，“AMD锐龙AI Max+ PRO 395处理器 + 128GB RAM + 2TB SSD + AMD Radeon 8060S显卡”版本定价21999元，支持按需定制。
+
+Olib 是一款体积不到 50MB 的绿色软件，将“找书→下载→管理→阅读”的全流程需求集成一体——对常看电子书、又厌烦网页端广告多/速度慢的 Windows 用户来说，它是目前最省心、零成本的实用选择之一，如果想下载体验，可自行搜索软件名或去GitHub开源地址，Python编写。https://github.com/shiyi-0x7f/o-lib 
+
+https://geminicli.com/extensions/
+
+https://system76.com/laptops/oryp13/configure
+
+Nuitka 把Python源代码翻译成 C 代码，再交给 C 编译器生成可执行文件或扩展模块。它的目标不是彻底改变 Python，而是尽量保持兼容性，同时减少运行时开销。可以看成是 CPython 的“加速器/打包器”的合体。
+
+
+[Windows] 搞机工具箱 v11.0.0
+一款利用ADB(安卓调试桥）来控制手机的玩机工具。
+由于ADB的权限shell介于用户与超级用户(Root)之间，因此本工具可在不Root的情况下实现一些手机自带设置中不具有的功能。
+
+10月9日，蚂蚁集团发布万亿参数的通用语言模型Ling-1T。除了Ling-1T这款非思考大模型，蚂蚁百灵团队还在训练万亿参数级的深度思考大模型Ring-1T，已在9月30日开源了preview版。//ling.tbox.cn/
+
+https://github.com/openpanel-dev/openpanel 为什么我决定从宝塔换到 OpenPanel？
+
+FydeOS for PC
+通用版本，支持各类 PC 设备，提供全面的硬件兼容性，让你轻松将 FydeOS 带入日常工作环境。
+
+拔掉网线，关闭Wi-Fi，让电脑彻底“失联”。这一步千万别省，不然后面全白搭。
+在Windows 11登录界面，同时按下Shift+F10，调出命令提示符窗口
+输入这串代码（一个字都不能错）：
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f
+回车执行后，再输入重启命令：
+shutdown /r /t 0
+电脑重启后，奇迹出现了——直接跳过Microsoft账户登录，让你创建本地账户！
+
+ruancang.net   qijishow.com Fosshub是一个提供完全免费开源电脑软件的良心网站 rjsos.com软件SOS是一个常见软件pojie激活教程集合   0daydown.com msdn.itellyou.cn
+
+OpenAI宣布推出类似 Anthropic 的 Artifacts 的应用Canvas，并称「这是一种使用ChatGPT写作和编程的新方式」。
+
+https://mall.bilibili.com/neul-next/detailuniversal/detail.html?from=detailspage&isMerchant=1&itemsId=11190494&jumpLinkType=0&module_name=Android_tt_url&noTitleBar=1&page=detailuniversal_detail&share_mid=489127461&share_token=17993414-be30-4d37-82be-6c9b3659003b&tt_from=copy_link&utm_campaign=client_share&utm_medium=toutiao_android&utm_source=copy_link#noReffer=true
+
+github.com/spieglt/FlyingCarpet
+Cross-platform AirDrop. File transfer between Android, iOS, Linux, macOS, and Windows over ad hoc WiFi. No network infrastructure required, just two devices with WiFi chips (and optionally Bluetooth) in close range.
+
+https://github.com/hoffstadt/DearPyGui
+带了超全功能演示：
+python -m dearpygui.demo
+下面这段代码，堪称经典入门模板：
+import dearpygui.dearpygui as dpg
+
+def save_callback():
+    print("Save Clicked")
+
+dpg.create_context()
+dpg.create_viewport()
+dpg.setup_dearpygui()
+
+with dpg.window(label="Example Window"):
+    dpg.add_text("Hello world")
+    dpg.add_button(label="Save", callback=save_callback)
+    dpg.add_input_text(label="string")
+    dpg.add_slider_float(label="float")
+
+dpg.show_viewport()
+dpg.start_dearpygui()
+dpg.destroy_context()
+不到十行，你就能跑出一个带按钮、滑块、输入框的窗口。
+——DearPyGui基于C++和 GPU 渲染，性能吊打传统的 Tkinter、PyQt。简单来说，它给 Python 加了“火箭推进器”，让你写界面像写脚本一样爽！
+
+让我们用timeit来实际解答上面的问题：
+# 测试在列表中查找元素
+python -m timeit "'needle' in ['needle']*1000"
+
+# 测试在集合中查找元素
+python -m timeit "'needle' in set(['needle']*1000"
+集合（set）的查找速度会远超列表（list）
+
+python -i命令允许你在脚本运行结束后，立即进入交互模式（REPL），并且保留脚本中所有加载的变量和状态。
+python -i my_script.py
+
+pydoc str
+这个命令会立即在你的终端中显示**str类型的所有方法及其详细解释**。它比在浏览器中搜索更快，信息更直接。
+ 搭建本地文档 Web 服务器：
+python -m pydoc -p 1234
+
+python -X importtime是一个不为人知的调试标志（flag），它能精确地测量并报告每个被导入模块的加载耗时。
+你可以直接对一个 Python 脚本文件进行反汇编：
+python -m dis my_script.py
+
+```
+# 1. 创建虚拟环境
+python -m venv myenv
+
+# 2. 激活虚拟环境（Linux/macOS）
+source myenv/bin/activate
+
+# 3. 激活虚拟环境（Windows）
+myenv\Scripts\activate.bat
+```
+
+kimi ok computer
+
+Python库eel
+
+https://www.classcentral.com/subject/ai
+
+近日，零刻GTR9 Pro迷你AI工作站发布，价格12999元，是最便宜的迷你AI工作站之一。
+
+https://jitword.com/doc
+
+https://uiverse.io/
+The Largest Library of Open-Source UI
+
+https://github.com/proxifly/free-proxy-list
+
+https://github.com/RamonUnch/AltSnap
+
+https://www.phonevalidator.com/  检测实体手机号。
+
+https://github.com/jingyaogong/minimind
+
+一个现代化的网络安全练习和竞赛平台 - CyberPoC
+
+WinOptimizer
+awesome-llm-apps
+
+https://platform.openai.com/agent-builder
+https://github.com/a-boy/Windows-12-Concept
+
+https://github.com/Open-Dev-Society/OpenStock
+
+GitHub 链接：https://github.com/karpathy/nanochat
+与 Karpathy 之前发布的 nanoGPT 仓库（只覆盖了预训练阶段）不同，nanochat 是一个从零开始实现的、极简但完整的 ChatGPT 克隆版训练 / 推理全流程项目，所有内容都集中在一个依赖极少、结构干净的代码库中。
+
+https://github.com/iflow-ai/iflow-cli/blob/main/README_CN.md
+
+运行 npm install -g @iflow-ai/iflow-cli 来安装 iFlow CLI
+运行 iflow 来启动 iFlow CLI
+npm uninstall -g @iflow-ai/iflow-cli
+
+https://github.com/hangwin/mcp-chrome/blob/master/README_zh.md
+
+https://codepen.io/Po-Ti/pen/ogbGXzN
+https://codepen.io/ChetasLua/pen/EaPvqVo
+https://aistudio.google.com/apps/drive/1IsiTJr3znRJXuoA7wwSqg9IN9op_Zuj-?resourceKey=&showPreview=true
+
+CheekyBastard55
+•
+4h ago
+•
+Edited 3h ago
+You don't have to trust him, you're free to try it out yourself on AI Studio.
+
+Prompt: "Design and create a web os like mac os full functional features from text editor , to dile manager to paint to video editor and all important mac os pre bundled software Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome.make it interesting and highly detail , shows details that no one expected go full creative and full beauty in one code block"
+
+Edit: I got this result, don't think it's the top model on the A/B test from Gemini 3.0 Pro.
+
+https://codepen.io/Po-Ti/pen/ogbGXzN
+https://github.com/okibcn/nano-for-windows/tree/master/src
+
+https://github.com/ashishpatel26/500-AI-Agents-Projects
+
+IT之家 10 月 14 日消息，英伟达当地时间 13 日宣布，基于 GB10 Grace Blackwell 超级芯片的 DGX Spark 桌面 AI 超算将于本月 15 日正式发售，第一方 FE 版本售 3999 美元（IT之家注：现汇率约合 28533 元人民币）。
+DGX Spark 采用的 GB10 芯片包含由 10 个 Arm Cortex-X925 核心与 10 个 Arm Cortex-A725 核心构成的 20 核 CPU，GPU 部分则拥有 6144 个 CUDA 核心，配备 256-Bit 128GB 的 LPDDR5x-9400 统一内存，FE 版本提供 4TB 固态硬盘。
+
+谷歌Gemini 3杀疯了！内测碾压GPT-5，前端开发直接被“降维打击”，10月22日正式发布
+
+https://github.com/jwangkun/Prompt-Tools 
+
+https://github.com/sansan0/TrendRadar
+
+Explore over 70 expert-lead sessions, live demos, and hands-on workshops. Join us October 27–29 in Washington, D.C., including NVIDIA CEO Jensen Huang’s keynote on October 28. Register Now 
+
+NVIDIA Base Command
+The operating system of the NVIDIA DGX data center.
+
+作为新一代计算机，DGX Spark 以小巧的桌面机形态提供 1 PFLOP AI 性能和 128GB 统一内存，使开发者能够在本地运行最高 2000 亿参数的 AI 模型推理以及对 700 亿参数的模型进行微调。此外，开发者还可通过 DGX Spark 在本地创建 AI 智能体和运行高级软件堆栈。
+DGX Spark 将整个 NVIDIA AI 平台——包括 GPU、CPU、网络、CUDA® 库及 NVIDIA AI 软件堆栈——整合为一台可置于实验室或办公室的小型系统，该系统拥有加速代理式 AI 与物理 AI 开发所需的强大性能。凭借空前的性能与 NVIDIA 庞大的生态系统，DGX Spark 将台式机转变为 AI 开发平台。
+
+DGX Spark 系统搭载 NVIDIA GB10 Grace Blackwell 超级芯片、NVIDIA ConnectX®-7 200Gb/s 网卡及 NVIDIA NVLink™-C2C 技术，可提供最高 1 PFLOP 的 AI 性能。其带宽是第五代 PCIe 的 5 倍，并配备 128GB CPU-GPU 一致性内存。
+
+预装的 NVIDIA AI 软件堆栈让开发者能够开箱即用，立即投入 AI 项目开发。通过 DGX Spark，开发者可访问包括模型、库及 NVIDIA NIM 微服务在内的 NVIDIA AI 生态系统工具，建立本地工作流，例如定制 Black Forest Labs 的 Flux.1 模型优化图像生成、使用 NVIDIA Cosmos Reason 视觉语言模型创建视觉搜索与摘要智能体，或使用针对 DGX Spark 优化的 Qwen3 开发 AI 聊天机器人等。
+
+为庆祝 DGX Spark 全球交付，黄仁勋赴德克萨斯州星舰基地，亲手将首批 DGX Spark 之一交付给 SpaceX 首席工程师埃隆·马斯克。此次交接承载着对超级计算机起源的致敬——早在 2016 年，马斯克所在团队就曾从黄仁勋手中接收了首台 NVIDIA DGX™-1 超级计算机。
+
+其他首批收到 DGX Spark 的企业有 Anaconda、Cadence、ComfyUI、Docker、谷歌、 Hugging Face、JetBrains、LM Studio、Meta、微软、Ollama 和 Roboflow，他们正在针对 DGX Spark 对各自工具、软件和模型进行测试、验证和优化。
