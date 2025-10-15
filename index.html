@@ -61,11 +61,11 @@ border:1px solid orange;
 </div>
 
 <p><span style="color:#cccc11">--Pages--</span></p>
-<div id="pageList">{% for file in site.static_files %}
-{% if file.extname == ".html" %}
-  + <a href="{{ file.path | replace_first: '/', '' }}">{{ file.path | replace_first: '/', '' }}</a><br/>
-{% endif %}
-{% endfor %}</div>
+<div id="pageList">{% for file in site.static_files %}{% if file.extname == ".html" %}+ <a href="{{ file.path | replace_first: '/', '' }}">{{ file.path | replace_first: '/', '' }}</a><br/>{% endif %}{% endfor %}
++ <a href="mi.html">旭尚Notebook mi.md</a><br/>
++ <a href="miNote15.html">红米Note15Pro+ miNote15.md</a><br/>
++ <a href="miPad5.html">RedmiPad5 miPad5.md</a><br/>
+</div>
 
 <div id="preview"></div>
 <br><img src="album/QingchunMengxiang2018/IMG_20180309_132643.jpg" width="800" border="0" alt="20180309在湘江小河滩">

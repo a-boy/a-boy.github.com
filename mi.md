@@ -702,3 +702,82 @@ Port：
 587
 Username：
 bimail
+
+https://developers.cloudflare.com/warp-client/get-started/linux/
+https://docs.gtk.pw/contents/linux/clash-cli.html#%E9%85%8D%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8  在 Linux 通过 cli 使用 Clash
+
+https://blog.elementary.io/updates-for-august-2025/
+
+## 2025-09-27
+Tower Git
+https://www.git-tower.com
+Over 100000 developers and designers are more productive with Tower - the most powerful Git client for Mac and Windows.
+
+https://github.com/github/copilot-cli 
+npm install -g @github/copilot@latest
+
+## 2025-10-01 16:20:10
+alias
+shcm -> Show-Command
+
+Wolfram Notebook Assistant + LLM Kit $20/m trial
+
+notepad4 matepath.exe
+
+https://ossinsight.io/collections/text-editor/
+
+https://ossinsight.io/collections/static-site-generator/trends/
+
+https://platform.openai.com/docs/overview
+
+https://developer.puter.com/tutorials/free-unlimited-openai-api/
+
+https://mui.com/x/react-data-grid/demos/real-time-data/
+
+https://www.chartjs.org/  https://github.com/chartjs/Chart.js  
+
+7960+ Live Wallpapers 4K - Free Animated Wallpapers for PC
+Motion Backgrounds
+https://motionbgs.com
+Download Free 4K Live Wallpapers at MotionBGs ✓ 100% Free ✓ Best 7960+ Animated Wallpapers for PC on Windows 11/10 & Mobile.
+
+https://md.doocs.org/
+
+https://www.paypal.com/us/digital-wallet/paypal-world
+
+https://github.com/artyom/mdserver  Basic http server rendering markdown files, Go
+https://github.com/jfernandez/mdserve  Fast markdown preview server with live reload and theme support. Rust
+
+https://www.byhand.ai/p/transformer-spreadsheet
+https://www.byhand.ai/p/full-stack-transformer
+
+https://threejs.org/editor/  tresjs
+
+https://github.com/SagerNet/sing-box shanlian.app
+
+https://trendshift.io/?trending-limit=100
+https://github.com/ChatGPTNextWeb/NextChat  https://nextnext.chat/new-chat
+
+
+Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share securely in seconds with custom S3 bucket support. Connect your own domain. cap.so
+
+python -m pydoc -p 8080 文档web服务  
+python -m dis my_script.py 反汇编  
+
+```
+import dis
+dis.dis("x = 2 + 2")
+
+# 1. 创建虚拟环境
+python -m venv myenv
+# 2. 激活虚拟环境（Linux/macOS）
+source myenv/bin/activate
+#激活虚拟环境（Windows）
+myenv\Scripts\activate.bat
+```
+
+https://wiki.python.org/moin/GuiProgramming
+
+https://simonwillison.net/2025/Oct/13/nanochat/
+The best ChatGPT that $100 can buy.  https://github.com/karpathy/nanochat
+
