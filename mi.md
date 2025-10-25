@@ -1,7 +1,7 @@
 ## windows special folders
  windows special folders     http://www.nirsoft.net/utils/special_folders_view.html
  shell:sendto shell:appsfolder shell:fonts
- 
+
 %UserProfile% - Opens your user's profile C:\Users\{username}
 %AppData%\Microsoft\Windows\Start Menu\Programs\Startup - Opens Windows 10 Startup location for program shortcuts
 
@@ -62,17 +62,17 @@ route print 查看路由表
 arp -a 显示ARP缓存表
 netsh wlan show profiles key=clear name="Xiaomi_8866"
 copy file1.txt+file2.txt merged.txt 合并文件
-xcopy src dest /E /H /C 
+xcopy src dest /E /H /C
 runas /user:Administrator notepad
 for /L %i in (1,1,8) do ping 8.8.8.%i
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/for
-wmic product get name,version > software.csv 
+wmic product get name,version > software.csv
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run 查看启动项
 
 C:\Windows\System32\MRT.exe
 Windows 恶意软件删除工具 (MSRT) 可帮助 Windows 计算机免受流行恶意软件攻击。 MSRT 可发现和删除威胁，并还原这些威胁所做的更改。 MSRT 通常每月作为 Windows 更新的一部分发布，或作为独立的工具在此处提供以供下载。
 
-C:\Windows\System32\msra.exe 远程协助 
+C:\Windows\System32\msra.exe 远程协助
 mstsc.exe 远程桌面连接
 C:\Windows\System32\perfmon.msc perfmon.exe 性能监视器
 psr.exe 步骤记录器
@@ -125,7 +125,7 @@ https://dustinbrett.com/
 
 https://cachyos.org/download/
 
-sniffnet 
+sniffnet
 
 free PlanetVPN https://freevpnplanet.com/
 
@@ -161,9 +161,9 @@ https://www.google.com/maps/place/中国湖南省长沙市/@28.1763401,112.69491
 https://www.mkdb.sh/ free hosted postgres, as simple asmkdir
 
 ContourPlot[f,{x,Subscript[x, min],Subscript[x, max]},{y,Subscript[y, min],Subscript[y, max]}]
-生成关于  x 和 y 的函数 f 的等高线图.  
+生成关于  x 和 y 的函数 f 的等高线图.
 
-loofah  [ˈluːfə]  n.【植】丝瓜；丝瓜络  
+loofah  [ˈluːfə]  n.【植】丝瓜；丝瓜络
 像这样列出常见的蔬菜水果的英语单词
 
 当然可以！以下是一些常见蔬菜和水果的英语单词及其中文翻译：
@@ -251,7 +251,7 @@ loofah  [ˈluːfə]  n.【植】丝瓜；丝瓜络
 24. Apricot - 杏子 /ˈeɪprɪˌkɑːt/
 25. Guava - 番石榴 /ˈɡwɑːvə/
 
-$a_1$ 
+$a_1$
 
 ## 2025-08-21 09:06:15
 tcb ai
@@ -338,12 +338,12 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 - Low-Level Control: Provides fine-grained control over Windows features but can be complex to use.
 - Wide Range of Capabilities: From simple window creation to advanced networking and system management.
 
-	EditPlus 不过有网络的大神分享了最新的6.x版本的注册号。  
+	EditPlus 不过有网络的大神分享了最新的6.x版本的注册号。
 	注册信息
 	用户名：EditPlus
 	注册码：WGJ8J-62UCJ-J6AGG-4A6GQ-26SSC
-	
-f(x)=a_0+∑_(n=1)^∞▒(a_n  cos⁡〖nπx/L〗+b_n  sin⁡〖nπx/L〗 ) 
+
+f(x)=a_0+∑_(n=1)^∞▒(a_n  cos⁡〖nπx/L〗+b_n  sin⁡〖nπx/L〗 )
 
 https://github.com/max-niederman/ttyper ttyper is a terminal-based typing test built with Rust and Ratatui.
 
@@ -352,7 +352,7 @@ https://chromewebstore.google.com/detail/markdown-editor/ekdcaddpmiodcipjfmffhhe
 ## 2025-08-23 07:46:50
 docker run -d -p 6080:6080 -e EMULATOR_DEVICE="Nexus 7" -e WEB_VNC=true --device /dev/kvm --name android-nexus7 budtmo/docker-android:emulator_14.0
 
-Drawnix 是一款强大的开源白板工具（https://github.com/plait-board/drawnix），集成思维导图、流程图等功能。基于Plait 框架开发，支持插件扩展，提供自动保存、无限画布 
+Drawnix 是一款强大的开源白板工具（https://github.com/plait-board/drawnix），集成思维导图、流程图等功能。基于Plait 框架开发，支持插件扩展，提供自动保存、无限画布
 
 docker run -d -p 6080:6080 -e EMULATOR_DEVICE="Samsung Galaxy S10" -e WEB_VNC=true --device /dev/kvm --name Android-GalaxyS10 budtmo/docker-android:emulator_14.0
 
@@ -376,7 +376,7 @@ A **lightweight** markdown editor with perfect WYSIWYG alignment.
 - 📱 Mobile optimized
 
 ## 2025-08-29 09:36:05
-https://github.com/ollama/ollama Developer(s)	Meta AI  Written in	Python  
+https://github.com/ollama/ollama Developer(s)	Meta AI  Written in	Python
 
 C:\Users\PC\AppData\Local\Programs\Ollama\lib\ollama\ggml-cuda.dll
 C:\Users\PC\.ollama\models
@@ -390,7 +390,7 @@ Bullet Operator ∙ (U+2219)
 Dot Operator ⋅ (U+22C5)
 Z Notation Spot ⦁ (U+2981)
 
-https://www.compart.com/en/unicode/category/Sm  List of Unicode Characters of Category “Math Symbol”  
+https://www.compart.com/en/unicode/category/Sm  List of Unicode Characters of Category “Math Symbol”
 https://www.w3schools.com/charsets/ref_utf_math.asp
 
 Dalvík is the main village of the Icelandic municipality of Dalvíkurbyggð. Its population is approximately 1,400. Dalvík. Town and Municipality. 达尔维克(Dalvik)是冰岛达尔维克市(Dalvikurbyggo)的主要村庄。该市人口约1400人。达尔维克。城镇和市镇
@@ -399,7 +399,7 @@ Android Open Source Project
 https://source.android.com › docs › core › runtime
 26 Aug 2024 — ART and Dalvik are compatible runtimes running DEX bytecode, so apps developed for Dalvik should work when running with ART.
 
-Bolt.new is an AI-powered web development agent that allows you to prompt, run, edit, and deploy full-stack applications directly from your browser—no local setup required. 
+Bolt.new is an AI-powered web development agent that allows you to prompt, run, edit, and deploy full-stack applications directly from your browser—no local setup required.
 - Full-Stack in the Browser: Bolt.new integrates cutting-edge AI models with an in-browser development environment powered by StackBlitz’s WebContainers. This allows you to:
 
 Install and run npm tools and libraries (like Vite, Next.js, and more)
@@ -408,7 +408,7 @@ Interact with third-party APIs
 Deploy to production from chat
 Share your work via a URL
 
-- AI with Environment Control: 
+- AI with Environment Control:
 
 https://stackblitz.com/ netlify.com
 
@@ -417,7 +417,7 @@ https://stackblitz.com/ netlify.com
 na.azalea; Indian azalea
 网络Azalea; Rhododendron simsii; Rhododendron simsii Planch.
 
-agent-c 
+agent-c
 ```
 void init_agent(void) {
     strcpy(agent.messages[0].role, "system");
@@ -437,14 +437,14 @@ https://win32.run/
 https://github.com/FedericoBruzzone/tgt TUI for Telegram written in Rust 🦀
 https://github.com/fdehau/tui-rs
 
-https://github.com/FrameworkComputer/Framework-Laptop-16  
+https://github.com/FrameworkComputer/Framework-Laptop-16
 Framework Laptop 16 (AMD Ryzen™ AI 300 Series)
 Starting at $58,500
 
 https://github.com/PixiEditor/PixiEditor
 
 ## 2025-09-01 18:35:32
-99446192 
+99446192
 
 https://www.tablesgenerator.com/text_tables
 
@@ -484,12 +484,12 @@ https://blog-keeper.com/ 文捕 博客内容一键解析下载工具
 combi
 美 [ˈkɑmbi]
 英 [ˈkɒmbi]
-网络康贝；日本康贝；组合(combination) 
+网络康贝；日本康贝；组合(combination)
 kombi
 
 http://www.aiinnovation.com.cn/#/trackDetail?id=153 兴智杯全国人工智能创新应用大赛 报名时段：2025-05-08~2025-09-15
 
-https://micai.org/2025/  MICAI 2025  
+https://micai.org/2025/  MICAI 2025
 _The Mexican International Conference on Artificial Intelligence (MICAI_) is the leading AI event in Mexico, organized by the Mexican Society for Artificial ...
 
 中国新一代迷彩服被称为“星空迷彩”，其花型和颜色都是全新设计的，共有林地、荒漠、丛林、城市和沙漠等五种配色，可以适应国内外的各种地形地貌的使用需求，迷彩服的主要作用是两方面，一是增加战士在实战环境中的伪装效果，二是要穿着实用，可以满部队日常训练和野外放置物品等需求，图中是新一代迷彩服臂章采用隐形图案。
@@ -524,7 +524,7 @@ _The Mexican International Conference on Artificial Intelligence (MICAI_) is the
 ## 2025-09-09 11:34:06
 du.hanyupinyin.cn 在线读拼音
 
-FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development  www.fltk.org  
+FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development  www.fltk.org
 
 charmap.exe
 
@@ -537,7 +537,7 @@ C:\Windows\Tasks
 
 https://github.com/Raphire/Win11Debloat
 
-warp.dev 
+warp.dev
 Warp was founded in June 2020 by Zach Lloyd, former Principal Engineer at Google and interim CTO at TIME.[5] Lloyd and an early engineering team decided to develop Warp as a modern version of the command line terminal. Warp was built natively in Rust.[6]
 
 In April 2023, Warp announced Warp AI, which integrated an OpenAI large language model chatbot into the terminal.[7] In June 2023, Warp introduced Warp Drive for collaboration on the command line
@@ -554,10 +554,10 @@ DNS欺骗(DNS Spoofing)也被称为DNS缓存投毒(DNS Cache Poisoning)，是一
 https://utcp.io
 UTCP is a lightweight, secure, and scalable standard that enables AI agents and applications to discover and call tools directly using their native protocols - ...
 
-音乐魔石  https://yym4.com/search/宋小睿  
+音乐魔石  https://yym4.com/search/宋小睿
 
 duckdb  https://duckdb.org/docs/stable/
-https://shell.duckdb.org/  
+https://shell.duckdb.org/
 npm install @duckdb/node-api
 pip install duckdb
 
@@ -608,7 +608,7 @@ https://www.doubao.com/thread/w280275885d67e7b2 豆包音乐生成 奋斗点亮�
 
 ## 2025-09-15 06:42:23
 https://github.com/Mercury13/unicodia Encyclopedia of Unicode characters
-OSSSR.COM  发现、学习、分享，与软件爱好者共同成长。  
+OSSSR.COM  发现、学习、分享，与软件爱好者共同成长。
 
 Koto City, Tokyo
 
@@ -682,7 +682,7 @@ https://cooklikehoc.soilzhu.su/%E7%82%92%E8%8F%9C/%E5%AE%B6%E5%B8%B8%E5%B0%8F%E7
 
 trayChrome https://github.com/cornradio/tray-chrome
 
-https://www.zhiyuan-robot.com/	
+https://www.zhiyuan-robot.com/
 
 ## 2025-09-23 08:42:40
 https://csacademy.com/app/graph_editor/
@@ -713,7 +713,7 @@ Tower Git
 https://www.git-tower.com
 Over 100000 developers and designers are more productive with Tower - the most powerful Git client for Mac and Windows.
 
-https://github.com/github/copilot-cli 
+https://github.com/github/copilot-cli
 npm install -g @github/copilot@latest
 
 ## 2025-10-01 16:20:10
@@ -734,7 +734,7 @@ https://developer.puter.com/tutorials/free-unlimited-openai-api/
 
 https://mui.com/x/react-data-grid/demos/real-time-data/
 
-https://www.chartjs.org/  https://github.com/chartjs/Chart.js  
+https://www.chartjs.org/  https://github.com/chartjs/Chart.js
 
 7960+ Live Wallpapers 4K - Free Animated Wallpapers for PC
 Motion Backgrounds
@@ -761,8 +761,8 @@ https://github.com/ChatGPTNextWeb/NextChat  https://nextnext.chat/new-chat
 
 Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share securely in seconds with custom S3 bucket support. Connect your own domain. cap.so
 
-python -m pydoc -p 8080 文档web服务  
-python -m dis my_script.py 反汇编  
+python -m pydoc -p 8080 文档web服务
+python -m dis my_script.py 反汇编
 
 ```
 import dis
@@ -781,3 +781,13 @@ https://wiki.python.org/moin/GuiProgramming
 https://simonwillison.net/2025/Oct/13/nanochat/
 The best ChatGPT that $100 can buy.  https://github.com/karpathy/nanochat
 
+
+## 2025-10-22
+zrok  ona gitpod.io
+igraph https://github.com/igraph/igraph
+https://igraph.org/c/html/latest/igraph-Tutorial.html
+
+octahide
+zed preview
+
+Bonjour 国际音标：标准发音为 /bɔ̃.ʒuʁ/  “Bonsoir”（晚上好）Merci	谢谢	麦（mài）喝西（xi）	/mɛʁ.si/ Au revoir	再见	哦（ò）喝呜瓦（wǎ）	/o.ʁə.vwaʁ/
