@@ -31,6 +31,13 @@
             float: left;
         }
 
+        img[alt="xiangjianganbian"] {
+            width: fit-content;
+            max-width: 100%;
+            box-sizing: content-box;
+            background-color: #fff;
+        }
+
         #fun {
             font-size: 12px;
             color: #ddd;
@@ -46,8 +53,9 @@
         <a href="/" style="color: #0f0"><img src="images/photo.png" width=32 height=32 />a-boy</a>
         <span style="float: right">曾经多少的痴心迷恋 只与爱情无关 </span>
     </header>
-    <a id="fun" href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';" contenteditable>
-        ----</a>    <a id="bgcolor" href="#" contenteditable>bgcolor </a><br />
+    <a id="fun" href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';"
+        contenteditable>
+        ----</a> <a id="bgcolor" href="#" contenteditable>bgcolor </a><br />
     <nav>
         <a href="https://github.com/a-boy/volcano">volcano</a>
         <a href="https://github.com/a-boy/playmath">playmath</a>
@@ -102,7 +110,7 @@
         <span style="color: #aaa">{{ post.date | date: "%Y-%m-%d" }}</span><br />
         {% endfor %}
     </div>
-    <img src="images/IMG_20130307110834_xiangjianghetan_March.jpg" width="800" alt="line" /><br />
+    <img src="images/IMG_20130307110834_xiangjianghetan_March.jpg" alt="xiangjianganbian" /><br />
     <p><span style="color: #cccc11">--Pages--</span></p>
     <div id="pageList">
         {% for file in site.static_files %}{% if file.extname == ".html" %}+
