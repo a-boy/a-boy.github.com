@@ -30,6 +30,12 @@
             width: 600px;
             float: left;
         }
+
+        #fun {
+            font-size: 12px;
+            color: #ddd;
+            text-decoration: none;
+        }
     </style>
     <script src="lib/polar.js"></script>
     <script src="lib/marked.js"></script>
@@ -37,11 +43,11 @@
 
 <body>
     <header>
-        <a href="/"><img src="images/photo.png" width=32 height=32 />a-boy.github.io</a>
-        <span>曾经多少的痴心迷恋 只与爱情无关 </span>
+        <a href="/" style="color: #0f0"><img src="images/photo.png" width=32 height=32 />a-boy</a>
+        <span style="float: right">曾经多少的痴心迷恋 只与爱情无关 </span>
     </header>
-    <a href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';" contenteditable>
-        ----</a><br />
+    <a id="fun" href="#" onclick="var _s=document.body.style;_s.color='#CC8F22';_s.backgroundColor='#FFFFFF';" contenteditable>
+        ----</a>    <a id="bgcolor" href="#" contenteditable>bgcolor </a><br />
     <nav>
         <a href="https://github.com/a-boy/volcano">volcano</a>
         <a href="https://github.com/a-boy/playmath">playmath</a>
@@ -86,9 +92,9 @@
         </audio>坠入爱河的火星人2(PoiZone).mp3 <br />
     </div>
     <p><span style="color: #94cc11">--Paint--</span></p>
-🎨
+    🎨
     <p><span style="color: #9d11cc">--Original Videos--</span></p>
-🎞️
+    🎞️
     <p><span style="color: #cccc11">--Posts--</span></p>
     <div id="postList">
         {% for post in site.posts %} -
@@ -129,20 +135,22 @@
         <span>⭠⭡⭢⭣⭤⭥⭦⭧⭨⭩⭪⭫⭬⭭⭮⭯⭰⭱⭲⭳ ❶❷❸❹❺❻❼❽❾❿➀➁➂➃➄➅➆➇➈➉➊➋➌➍➎➏➐➑➒➓</span>
         <hr />
         <span style="color: #999">@2013→2025</span>
-        <span style="color: #0f0">a-boy</span> avvboy(at)gmail.com<br />
+        <span style="color: #0f0">a-boy.github.io</span> avvboy(at)gmail.com<br />
     </div>
     <script async>
-        document.body.style.backgroundColor =
-            "#" +
+        let color1 = "#" +
             Math.floor(Math.random() * 0xffffff)
                 .toString(16)
                 .padStart(6, "0");
+        document.body.style.backgroundColor = color1;
+        _('bgcolor').innerText = color1;
         var poem =
             "我们从亘古的神话中走来\n\
 时光带我们去远方";
-        /*if(!prompt(poem,'..----')){
-$('a[href="#"]').click()
-}*/
+        /*if (!prompt(poem, '..----')) {
+            $('a[href="#"]').click()
+        }*/
+        // todo: fun 随机生成gookey或AI prompt
     </script>
 </body>
 
