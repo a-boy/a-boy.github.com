@@ -49,10 +49,10 @@ layout: page
       {% if post.author %}
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
-      <p class="post-meta">
+      <span class="post-meta">
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
         Posted on {{ post.date | date: date_format }}
-      </p>
+      </span>
 
       {% if thumbnail != "" %}
       <div class="post-image post-image-small">
