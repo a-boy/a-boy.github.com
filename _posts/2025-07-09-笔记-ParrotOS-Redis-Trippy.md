@@ -2,7 +2,7 @@
 title: 笔记-ParrotOS-Redis-Trippy
 date: 2025-07-09
 author: Cody Luo
-tags: [编程, 笔记, ParrotOS, Redis]
+tags: [编程 软件使用技巧]
 ---
 
 ## ParrotOS
