@@ -1,0 +1,30 @@
+name: Manual Pages build & deploy
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build site
+        run: |
+          # If your site is plain static files, no build may be necessary.
+          # If you use a generator, replace this with your build command, e.g.:
+          # npm install && npm run build
+          echo "No build step configured"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./        # change to your built-site dir, e.g. ./_site or ./public
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
